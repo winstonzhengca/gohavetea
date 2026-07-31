@@ -48,6 +48,16 @@ for _k in POSTER_KEYS:
 for _k in ARTIST_KEYS:
     PAGES[f"artist-{_k}"] = (f"artists/{_k}/", "artist")
 
+# Subpage key -> landing-page key, used to render a "back to ..." link on
+# every table/poster/artist detail page.
+PARENT_OF = {}
+for _k in TABLE_KEYS:
+    PARENT_OF[f"table-{_k}"] = "tables"
+for _k in POSTER_KEYS:
+    PARENT_OF[f"poster-{_k}"] = "posters"
+for _k in ARTIST_KEYS:
+    PARENT_OF[f"artist-{_k}"] = "artists"
+
 # Main navigation, in display order. Each entry is either a direct page
 # link (children=None) or a dropdown whose own key is also a landing page.
 NAV = [

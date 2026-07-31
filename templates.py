@@ -27,6 +27,7 @@ PLACEHOLDER_NOTE = {
     "zh": "图片占位 — 待补充最终作品文件",
 }
 ALT_LABEL = {"en": "Description:", "zh": "描述："}
+BACK_PREFIX = {"en": "← Back to ", "zh": "← 返回"}
 SKIP_LABEL = {"en": "Skip to main content", "zh": "跳至主要内容"}
 LANG_SWITCH_LABEL = {"en": "中文", "zh": "English"}
 MENU_LABEL = {"en": "Menu", "zh": "菜单"}
@@ -379,6 +380,17 @@ def _nav_html(lang, current_key):
     return "".join(items)
 
 
+def _back_link_html(lang, page_key):
+    parent_key = nav.PARENT_OF.get(page_key)
+    if not parent_key:
+        return ""
+    parent_slug, _ = nav.PAGES[parent_key]
+    parent_label = nav.NAV_LABELS[parent_key][0 if lang == "en" else 1]
+    href = url(f"/{lang}/{parent_slug}")
+    text = f"{BACK_PREFIX[lang]}{parent_label}"
+    return f'<p class="back-link"><a href="{href}">{text}</a></p>'
+
+
 def base_layout(lang, page_key, title, description, main_html):
     site_name = nav.SITE_NAME[lang]
     slug, _kind = nav.PAGES[page_key]
@@ -386,6 +398,7 @@ def base_layout(lang, page_key, title, description, main_html):
     html_lang = "en-CA" if lang == "en" else "zh-Hans"
 
     nav_html = _nav_html(lang, page_key)
+    back_link_html = _back_link_html(lang, page_key)
 
     return f"""<!doctype html>
 <html lang="{html_lang}">
@@ -424,7 +437,9 @@ def base_layout(lang, page_key, title, description, main_html):
   </div>
 </header>
 <main id="main" class="page-{_kind}">
+{back_link_html}
 {main_html}
+{back_link_html}
 </main>
 <footer class="site-footer">
   <div class="footer-inner">

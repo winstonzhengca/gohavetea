@@ -221,6 +221,29 @@ main {
   padding: 2.5rem 1.25rem 4rem;
 }
 
+.back-link {
+  margin: 0 0 1.5rem;
+}
+.back-link:last-child {
+  margin: 2.5rem 0 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+.back-link a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  color: var(--green-dark);
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-decoration: none;
+}
+.back-link a:hover,
+.back-link a:focus {
+  color: var(--berry);
+  text-decoration: underline;
+}
+
 .hero {
   padding: 2rem 0 1rem;
   border-bottom: 1px solid var(--line);
