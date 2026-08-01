@@ -11,7 +11,10 @@ from content import nav
 # root Pages site). Set to "/<repo-name>" for a GitHub Pages *project* site
 # (served at username.github.io/repo-name/), so every root-absolute link
 # still resolves correctly under that sub-path.
-BASE_PATH = "/go-have-tea"
+# Repo is "gohavetea", reachable both at winstonzhengca.github.io/gohavetea/
+# and, once DNS + the custom domain on the root repo are live, at
+# junhongma.com/gohavetea/ (GitHub Pages project-site domain inheritance).
+BASE_PATH = "/gohavetea"
 
 
 def url(path):
