@@ -25,6 +25,18 @@ def url(path):
     return BASE_PATH + path
 
 
+# Primary custom domain, for the fully-qualified URLs that canonical links,
+# hreflang, Open Graph, and sitemap.xml require (a root-relative URL is not
+# valid for og:url/og:image per the Open Graph spec).
+SITE_ORIGIN = "https://junhongma.com"
+
+
+def abs_url(path):
+    if path.startswith(("http://", "https://", "#")):
+        return path
+    return SITE_ORIGIN + BASE_PATH + path
+
+
 PLACEHOLDER_NOTE = {
     "en": "Image placeholder — pending final artwork files",
     "zh": "图片占位 — 待补充最终作品文件",
@@ -394,11 +406,22 @@ def _back_link_html(lang, page_key):
     return f'<p class="back-link"><a href="{href}">{text}</a></p>'
 
 
+def _footer_links_html(lang):
+    items = []
+    for key in nav.FOOTER_LINKS:
+        slug, _ = nav.PAGES[key]
+        label = nav.NAV_LABELS[key][0 if lang == "en" else 1]
+        items.append(f'<a href="{url(f"/{lang}/{slug}")}">{label}</a>')
+    return "".join(items)
+
+
 def base_layout(lang, page_key, title, description, main_html):
     site_name = nav.SITE_NAME[lang]
     slug, _kind = nav.PAGES[page_key]
     other_lang = "zh" if lang == "en" else "en"
     html_lang = "en-CA" if lang == "en" else "zh-Hans"
+    canonical = abs_url(f"/{lang}/{slug}")
+    og_locale = "en_CA" if lang == "en" else "zh_CN"
 
     nav_html = _nav_html(lang, page_key)
     back_link_html = _back_link_html(lang, page_key)
@@ -410,8 +433,16 @@ def base_layout(lang, page_key, title, description, main_html):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{esc(description)}">
-<link rel="alternate" hreflang="en-CA" href="{url(f'/en/{slug}')}">
-<link rel="alternate" hreflang="zh-Hans" href="{url(f'/zh/{slug}')}">
+<link rel="canonical" href="{canonical}">
+<link rel="alternate" hreflang="en-CA" href="{abs_url(f'/en/{slug}')}">
+<link rel="alternate" hreflang="zh-Hans" href="{abs_url(f'/zh/{slug}')}">
+<link rel="alternate" hreflang="x-default" href="{abs_url(f'/en/{slug}')}">
+<meta property="og:site_name" content="Go Have Tea / 吃茶去">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(description)}">
+<meta property="og:url" content="{canonical}">
+<meta property="og:locale" content="{og_locale}">
 <link rel="stylesheet" href="{url('/assets/css/style.css')}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -448,6 +479,9 @@ def base_layout(lang, page_key, title, description, main_html):
   <div class="footer-inner">
     <p class="footer-credit">{FOOTER_CREDIT[lang]}</p>
     <p class="footer-meta">{FOOTER_META[lang]}</p>
+    <nav class="footer-links" aria-label="{'More' if lang == 'en' else '更多'}">
+      {_footer_links_html(lang)}
+    </nav>
     <a class="back-top" href="#top">{BACK_TOP[lang]}</a>
   </div>
 </footer>
@@ -458,9 +492,9 @@ def base_layout(lang, page_key, title, description, main_html):
 
 
 FOOTER_CREDIT = {
-    "en": "Go Have Tea — Tea Travels: Leaves, Care, and Everyday Invention. "
-    "Curated by Junhong (Summer) Ma. Calligraphy by Ying (Joy) Wen. Paintings by Hui Yang.",
-    "zh": "吃茶去 · 茶在路上：叶、照护与日常创造。策展：马俊虹（Summer）。书法：文莹。绘画：杨慧。",
+    "en": "Go Have Tea — a digital exhibition from Edmonton. "
+    "Curated by Junhong (Summer) Ma. Calligraphy by Wen Ying. Paintings by Yang Hui.",
+    "zh": "吃茶去 · 来自埃德蒙顿的数字展览。策展：马俊红。书法：温颖。绘画：杨慧。",
 }
 FOOTER_META = {
     "en": "A three-table exhibition for the 2026 Edmonton Heritage Festival. "

@@ -23,7 +23,9 @@ POSTER_KEYS = [
 ]
 
 TABLE_KEYS = ["chinese-tea", "wellness-goji", "bubble-tea"]
-ARTIST_KEYS = ["hui-yang", "ying-joy-wen"]
+# Slugs use the corrected surname-first name order (v2.0 revision brief):
+# Yang Hui / 杨慧, Wen Ying / 温颖.
+ARTIST_KEYS = ["yang-hui", "wen-ying"]
 
 # key -> (slug, kind)
 # kind drives small layout differences in templates.py (poster meta box,
@@ -40,6 +42,8 @@ PAGES = {
     "glossary": ("glossary/", "glossary"),
     "sources-credits": ("sources-credits/", "standard"),
     "faq": ("faq/", "faq"),
+    "tea-tips": ("tea-tips/", "standard"),
+    "further-reading": ("further-reading/", "standard"),
 }
 for _k in TABLE_KEYS:
     PAGES[f"table-{_k}"] = (f"tables/{_k}/", "table")
@@ -58,42 +62,45 @@ for _k in POSTER_KEYS:
 for _k in ARTIST_KEYS:
     PARENT_OF[f"artist-{_k}"] = "artists"
 
-# Main navigation, in display order. Each entry is either a direct page
-# link (children=None) or a dropdown whose own key is also a landing page.
+# Main navigation, in display order (v2.0 revision brief §5.1): a flat
+# 10-item nav. Curator, Learning Resources, and FAQ stay reachable (their
+# URLs still exist in PAGES above) but move to footer-only links instead
+# of the primary nav — see templates.py FOOTER_LINKS.
 NAV = [
     {"key": "home", "children": None},
-    {"key": "about", "children": None},
     {"key": "tables", "children": [f"table-{k}" for k in TABLE_KEYS]},
     {"key": "posters", "children": None},
     {"key": "artists", "children": [f"artist-{k}" for k in ARTIST_KEYS]},
-    {"key": "curator", "children": None},
     {"key": "edmonton-tea-map", "children": None},
-    {"key": "learning", "children": None},
     {"key": "glossary", "children": None},
+    {"key": "tea-tips", "children": None},
+    {"key": "further-reading", "children": None},
+    {"key": "about", "children": None},
     {"key": "sources-credits", "children": None},
-    {"key": "faq", "children": None},
 ]
+
+# Secondary/footer-only links: URL still works, just not in the primary nav.
+FOOTER_LINKS = ["curator", "learning", "faq"]
 
 NAV_LABELS = {
     "home": ("Home", "首页"),
-    "about": ("About the Exhibition", "关于展览"),
-    "tables": ("Three Tables", "三张展桌"),
+    "about": ("About", "关于"),
+    "tables": ("Three Exhibition Tables", "三张展桌"),
     "table-chinese-tea": ("Chinese Tea", "中国茶"),
     "table-wellness-goji": ("Wellness & Goji", "养生与枸杞"),
     "table-bubble-tea": ("Bubble Tea", "珍珠奶茶"),
     "posters": ("Poster Gallery", "海报馆"),
     "artists": ("Artists", "艺术家"),
-    "artist-hui-yang": ("Hui Yang", "杨慧"),
-    "artist-ying-joy-wen": ("Ying (Joy) Wen", "文莹"),
+    "artist-yang-hui": ("Yang Hui", "杨慧"),
+    "artist-wen-ying": ("Wen Ying", "温颖"),
     "curator": ("Curator", "策展人"),
-    "edmonton-tea-map": ("Edmonton Tea Map", "埃德蒙顿茶地图"),
+    "edmonton-tea-map": ("Edmonton Stories", "埃德蒙顿故事"),
     "learning": ("Learning Resources", "学习资源"),
-    "glossary": ("Glossary", "词汇表"),
-    "sources-credits": ("Sources & Credits", "资料来源与致谢"),
+    "glossary": ("Tea Glossary", "茶词汇"),
+    "sources-credits": ("Credits", "致谢"),
     "faq": ("FAQ", "常见问题"),
+    "tea-tips": ("Tea Tips", "泡茶小贴士"),
+    "further-reading": ("Further Reading", "延伸阅读"),
 }
-
-for _k in POSTER_KEYS:
-    PAGES.setdefault(f"poster-{_k}", (f"posters/{_k}/", "poster"))
 
 SITE_NAME = {"en": "Go Have Tea", "zh": "吃茶去"}

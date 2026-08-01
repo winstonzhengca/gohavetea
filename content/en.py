@@ -1,52 +1,46 @@
 # -*- coding: utf-8 -*-
-"""English page content for Go Have Tea, transcribed from the 2026 Edmonton
-Heritage Festival website content package (Part I)."""
+"""English page content for Go Have Tea.
+
+v2.0 revision (2026-08-01): patched per the exhibition team's Master
+Revision Brief — corrected names/credits, confirmed event info, removed
+public placeholders and internal production notes, expanded Goji/
+Osmanthus/Glossary, added Tea Tips + Further Reading, trimmed homepage
+and table-page density. See /content-qa.md for items left on hold.
+"""
 
 PAGES = {}
 
 # --------------------------------------------------------------------- home
 PAGES["home"] = {
     "title": "Go Have Tea | Tea Travels in Edmonton",
-    "meta": "Explore the tea exhibition created for the 2026 Edmonton Heritage Festival: Chinese tea-making, Edmonton goji stories, bubble tea, calligraphy, painting, and everyday practices of care.",
+    "meta": "Go Have Tea: a digital exhibition for the Chinese Pavilion at the 2026 Edmonton Heritage Festival (Aug 1–3, Hawrelak Park) — Chinese tea, Edmonton goji stories, bubble tea, calligraphy, and painting.",
     "blocks": [
-        {"type": "hero", "eyebrow": "GO HAVE TEA", "title": "Tea Travels: Leaves, Care, and Everyday Invention",
-         "subtitle": "A three-table exhibition for the 2026 Edmonton Heritage Festival",
-         "lead": "What travels when tea travels? Follow three paths: one leaf becoming many teas; pearl milk tea developing in Taiwan and moving through the world; and goji plants taking root in Edmonton. Along the way, meet the skills, memories, labour, landscapes, and relationships gathered around a cup.",
+        {"type": "hero", "eyebrow": "A digital exhibition from Edmonton", "title": "Go Have Tea",
+         "lead": "Tea is more than a drink. In Edmonton, it carries stories of migration, hospitality, memory, labour, and everyday life.",
          "buttons": [
-             {"label": "Start with Chinese Tea", "href": "/en/tables/chinese-tea/"},
-             {"label": "Follow the Goji Story", "href": "/en/tables/wellness-goji/", "variant": "secondary"},
-             {"label": "Build a Bubble Tea", "href": "/en/tables/bubble-tea/", "variant": "secondary"},
-             {"label": "Enter the Poster Gallery", "href": "/en/posters/", "variant": "secondary"},
+             {"label": "Explore the Three Tables", "href": "/en/tables/"},
+             {"label": "Visit the Poster Gallery", "href": "/en/posters/", "variant": "secondary"},
          ]},
-        {"type": "image", "tone": "green",
-         "caption": "Hero image: calligraphy and landscape detail",
-         "alt": "Black-brush calligraphy reading 吃茶去, ‘Go Have Tea,’ beside a detail from Hui Yang’s mountain landscape, used as the visual invitation to an Edmonton tea exhibition.",
-         "pending": True},
-        {"type": "heading", "level": 2, "text": "A 30-second welcome"},
-        {"type": "para", "text": "Tea is never only a drink. Leaves become different teas through skilled hands. Plants move with people and take root in new cities. Milk tea turns taste into a language of choice and customization. This exhibition follows tea as craft, care, work, memory, and everyday invention."},
-        {"type": "para", "text": "Choose any table. Look closely. Make something. Then ask: what travels when tea travels?"},
+        {"type": "para", "class": "event-strip", "text": "Edmonton Heritage Festival · Chinese Pavilion · Hawrelak Park · August 1–3, 2026"},
+        {"type": "para", "text": "Created for the Chinese Pavilion at the 2026 Edmonton Heritage Festival, Go Have Tea brings together three exhibition tables: Chinese tea, wellness and Edmonton goji stories, and bubble tea. Painting, calligraphy, fieldwork photographs, posters, and familiar objects invite visitors to see how tea changes as it moves—and how people make new forms of home around it."},
         {"type": "heading", "level": 2, "text": "Why “Go Have Tea”?"},
-        {"type": "para", "text": "“Go have tea” sounds ordinary, and that is its strength. Associated with later Chan encounter literature and the master Zhaozhou, the phrase 吃茶去 is often read as a return to the present moment. In this exhibition it also becomes a public invitation: slow down before judging, sit together before explaining, and make room for conversation across difference."},
-        {"type": "para", "text": "Tea is not offered as a cure for conflict or as a decorative symbol of “Chinese culture.” It is a modest practice of attention. A shared cup does not erase difference; it can create time to meet difference without turning it immediately into stereotype."},
-        {"type": "buttons", "items": [{"label": "Read the curator’s interpretation", "href": "/en/posters/go-have-tea/"}]},
+        {"type": "para", "text": "“Go have tea” is an everyday invitation, associated with Chan master Zhaozhou: slow down before judging, sit together before explaining. It is not a cure for conflict—just a modest practice of attention."},
+        {"type": "buttons", "items": [{"label": "Read the full interpretation", "href": "/en/posters/go-have-tea/"}]},
         {"type": "heading", "level": 2, "text": "Three ways tea travels"},
         {"type": "columns", "items": [
             {"title": "One Leaf, Many Teas", "href": "/en/tables/chinese-tea/",
              "text": "See how one plant becomes many teas through local knowledge, tools, timing, and sensory judgment."},
             {"title": "Wellness & Goji Stories", "href": "/en/tables/wellness-goji/",
-             "text": "Follow goji through Edmonton’s river valley, family gardens, community memory, and artist-researcher Yong Fei Guan’s Edmonton Goji Map."},
+             "text": "Follow goji through Edmonton’s river valley, family gardens, community memory, and Yong Fei Guan’s Edmonton Goji Map."},
             {"title": "Build a Bubble Tea", "href": "/en/tables/bubble-tea/",
-             "text": "Explore a drink that developed in Taiwan in the 1980s and became a global system of taste, customization, franchising, and service work."},
+             "text": "Explore a drink that developed in Taiwan in the 1980s and became a global system of customization, franchising, and service work."},
         ]},
         {"type": "heading", "level": 2, "text": "Art in the exhibition"},
-        {"type": "para", "text": "Calligraphy by Ying (Joy) Wen and paintings by Hui Yang do not simply decorate the tables. They help the exhibition think. 吃茶去 turns an idea into an everyday action. 和而不同 — harmony without sameness — gives the project an ethical direction. Yang’s landscapes and studies of teaware connect movement, dwelling, objects, and memory."},
+        {"type": "para", "text": "Calligraphy by Wen Ying and paintings by Yang Hui do not simply decorate the tables—they help the exhibition think, from 吃茶去 as an everyday action to 和而不同, harmony without sameness, as its ethical direction."},
         {"type": "buttons", "items": [
             {"label": "Meet the artists", "href": "/en/artists/"},
             {"label": "View the poster gallery", "href": "/en/posters/", "variant": "secondary"},
         ]},
-        {"type": "image", "tone": "tan", "pending": True,
-         "caption": "Objects from the physical exhibition tables, photographed in Edmonton",
-         "alt": "Three photographed objects from the Chinese Tea, Wellness & Goji, and Bubble Tea tables."},
         {"type": "heading", "level": 2, "text": "Before you leave"},
         {"type": "para", "text": "Take one question with you:"},
         {"type": "quote", "text": "Which plant, drink, object, or smell makes you think of home?"},
@@ -55,39 +49,31 @@ PAGES["home"] = {
 
 # -------------------------------------------------------------------- about
 PAGES["about"] = {
-    "title": "About the Exhibition | Go Have Tea",
-    "meta": "Why this Edmonton Heritage Festival exhibition brings together Chinese tea, goji, bubble tea, calligraphy, painting, migration, labour, and everyday care.",
+    "title": "About | Go Have Tea",
+    "meta": "About Go Have Tea: the exhibition, why it was created, curator Junhong (Summer) Ma, and community partner CGAA — presented at the 2026 Edmonton Heritage Festival, August 1–3, Hawrelak Park.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "About the Exhibition"},
-        {"type": "para", "text": "This exhibition was created for the Edmonton Heritage Festival as a small, mobile work of public anthropology. It begins with familiar things—tea leaves, cups, goji berries, milk tea menus, stickers, paintings, and calligraphy—and asks what larger histories they carry."},
-        {"type": "para", "text": "The exhibition does not claim to summarize Chinese tea culture. Instead, it follows three concrete routes. The first asks how skilled makers transform one plant into many teas. The second follows plants and practices of care, with Edmonton goji at its centre. The third traces pearl milk tea from 1980s Taiwan into diaspora life, global franchising, social media, and local youth culture."},
-        {"type": "para", "text": "Together the tables show that culture is not a sealed inheritance. It is made and remade through movement, labour, adaptation, disagreement, and ordinary acts of sharing."},
-        {"type": "heading", "level": 2, "text": "Why Edmonton?"},
-        {"type": "para", "text": "Edmonton is not simply the location where an imported story is displayed. It is part of the story. Goji shrubs have grown in the city’s river valley and family gardens for generations. Tea shops and bubble tea counters translate tastes across languages and neighbourhoods. Long winters, bright summers, migration, study, work, and family life all change when, where, and how people make a cup."},
-        {"type": "para", "text": "The exhibition therefore treats Edmonton as a place where Chinese and East Asian tea practices are not merely preserved but actively remade."},
-        {"type": "heading", "level": 2, "text": "Public anthropology at a festival"},
-        {"type": "para", "text": "Public anthropology asks how research can become a form of conversation rather than a one-way explanation. At a festival, visitors may stay for ten seconds or ten minutes. The exhibition is built for both. A short title opens a question; an object or activity holds attention; a QR-linked page lets visitors continue later."},
-        {"type": "para", "text": "The aim is not to test visitors on correct facts. It is to help them notice relationships: between leaf and labour, plant and migration, menu and service work, artwork and memory, difference and hospitality."},
-        {"type": "heading", "level": 2, "text": "One exhibition, three entry points"},
-        {"type": "para", "text": "Visitors can begin anywhere:"},
+        {"type": "heading", "level": 1, "text": "About"},
+        {"type": "heading", "level": 2, "text": "The Exhibition"},
+        {"type": "para", "text": "Go Have Tea is a digital and in-person exhibition created for the Chinese Pavilion at the 2026 Edmonton Heritage Festival. It follows three exhibition tables—Chinese tea, wellness and Edmonton goji stories, and bubble tea—through craft, migration, care, business, and everyday invention. Painting, calligraphy, fieldwork photographs, and familiar objects show how tea changes as it moves, and how people build new forms of home around it in Edmonton."},
+        {"type": "heading", "level": 2, "text": "Why It Was Created"},
+        {"type": "para", "text": "Public conversations about Chinese tea often move to two extremes: a timeless national tradition, or a simple consumer choice. Both leave out the people and relationships that make tea possible. Go Have Tea follows movement instead—a leaf becoming many teas, a plant taking root in Edmonton, a Taiwanese drink entering shops, franchises, and youth culture—to make that labour and history visible."},
+        {"type": "heading", "level": 2, "text": "Curator"},
+        {"type": "para", "text": "Junhong (Summer) Ma is a cultural anthropologist whose work focuses on contemporary Chinese and East Asian tea culture, public anthropology, migration, service labour, and the movement of tea knowledge across places. She holds a PhD from the University of Alberta and is a postdoctoral researcher at Xiamen University."},
+        {"type": "para", "text": "She created Go Have Tea to bring anthropological research into a public setting through objects, artworks, stories, and conversation. Rather than presenting Chinese tea as one timeless tradition, the exhibition follows how tea is made, carried, adapted, sold, remembered, and shared in everyday life."},
+        {"type": "buttons", "items": [{"label": "Read the curator’s full statement", "href": "/en/curator/"}]},
+        {"type": "heading", "level": 2, "text": "Community Partner"},
+        {"type": "para", "text": "Go Have Tea is presented as part of the Chinese Pavilion at the 2026 Edmonton Heritage Festival. CGAA has supported and sponsored Edmonton’s Chinese Pavilion since 1978, bringing together performances, arts, crafts, food, volunteers, and community participation."},
+        {"type": "buttons", "items": [{"label": "Visit the CGAA website", "href": "https://www.cgaa.ab.ca/", "external": True}]},
+        {"type": "heading", "level": 2, "text": "Event Details"},
         {"type": "list", "items": [
-            "Transform: How can one plant become many teas?",
-            "Take root: How do plants become part of a new city and its memories?",
-            "Remix: How did a Taiwanese drink become a global language of choice?",
+            "Edmonton Heritage Festival 2026 — August 1–3, Hawrelak Park, Edmonton",
+            "Saturday, August 1: 12:00 pm–9:00 pm",
+            "Sunday, August 2: 10:00 am–9:00 pm",
+            "Monday, August 3: 10:00 am–8:00 pm",
+            "Presented as part of the Chinese Pavilion, supported by CGAA",
         ]},
-        {"type": "para", "text": "Every path returns to the same question: what travels when tea travels?"},
-        {"type": "heading", "level": 2, "text": "On words, evidence, and care"},
-        {"type": "para", "text": "The exhibition separates legends, commercial claims, community knowledge, research findings, and curatorial interpretation. It names Taiwan clearly in the history of pearl milk tea. It does not describe one practice as the only “authentic” tea. It does not turn wellness into a promise of cure. It credits community projects and artists beside the material they created."},
-        {"type": "heading", "level": 2, "text": "Visitor information"},
-        {"type": "note", "style": "pending", "label": "Pending organizer confirmation",
-         "text": "2026 Edmonton Heritage Festival. Location: pavilion and site to be confirmed. Dates and hours: to be confirmed with the organizer before publication. Access: current festival accessibility and transportation link to be inserted."},
-        {"type": "para", "text": "Language: English website with a clearly visible 中文 switch."},
-        {"type": "para", "text": "Food and drink: display and educational activities only, unless the exact service has written festival and health approval."},
-        {"type": "image", "tone": "green", "pending": True,
-         "caption": "All three installed exhibition tables", "alt": "Wide photograph of the three installed exhibition tables at the festival pavilion."},
-        {"type": "image", "tone": "paper", "pending": True,
-         "caption": "Diagram of the three entry points",
-         "alt": "Simple top-down diagram showing the three entry points: Transform, Take root, Remix."},
+        {"type": "buttons", "items": [{"label": "Edmonton Heritage Festival 2026", "href": "https://www.heritagefest.ca/2026festival", "external": True}]},
+        {"type": "para", "text": "Language: English website with a 中文 switch. Food and drink: display and educational activities only, unless a specific service is separately approved."},
     ],
 }
 
@@ -96,9 +82,8 @@ PAGES["tables"] = {
     "title": "Three Exhibition Tables | Go Have Tea",
     "meta": "The Go Have Tea exhibition is arranged as three tables — Chinese Tea, Wellness & Goji, and Bubble Tea — that tell one connected story.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "Three Tables"},
-        {"type": "para", "text": "The exhibition is arranged as three tables, but it tells one connected story. Each table begins with an action—transform, take root, or remix—and shows tea culture being made in practice."},
-        {"type": "para", "text": "There is no required order. Begin with the leaf, the plant, or the cup that interests you."},
+        {"type": "heading", "level": 1, "text": "Three Exhibition Tables"},
+        {"type": "para", "text": "Three tables follow tea through craft, migration, care, business, and everyday invention. Start anywhere, then notice what changes from one table to the next."},
         {"type": "columns", "items": [
             {"title": "Chinese Tea — Transform", "href": "/en/tables/chinese-tea/", "text": "One plant, many processes, many traditions."},
             {"title": "Wellness & Goji — Take root", "href": "/en/tables/wellness-goji/", "text": "Plants, family knowledge, migration, and care in Edmonton."},
@@ -109,122 +94,87 @@ PAGES["tables"] = {
 
 # ------------------------------------------------------------ table pages
 PAGES["table-chinese-tea"] = {
-    "title": "One Leaf, Many Teas | Go Have Tea",
-    "meta": "Green, white, yellow, oolong, black, and dark teas can all begin with Camellia sinensis — see how skilled makers transform one plant into many traditions.",
+    "title": "Chinese Tea: One Plant, Many Teas | Go Have Tea",
+    "meta": "Green, white, yellow, oolong, black, and dark teas can all begin with the same plant, Camellia sinensis — see how skilled makers transform one plant into many traditions.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "Chinese Tea: One Leaf, Many Teas"},
-        {"type": "note", "style": "notice", "label": "QR label", "text": "LOOK AT THE LEAF"},
-        {"type": "heading", "level": 2, "text": "30-second view"},
-        {"type": "para", "text": "Green, white, yellow, oolong, black, and dark teas can all begin with Camellia sinensis. Their differences are not simply “inside the leaf.” Makers create them through sequences of withering, heating, rolling, oxidation, microbial transformation, roasting, and drying."},
-        {"type": "para", "text": "The point is not to memorize six boxes. It is to see tradition as living knowledge."},
-        {"type": "heading", "level": 2, "text": "What you are seeing on the table"},
-        {"type": "para", "text": "The jars, leaves, cups, and process cards make one idea visible: a tea is produced through relationships among plant variety, landscape, weather, tools, timing, sensory judgment, markets, and ways of serving."},
-        {"type": "para", "text": "Look for differences in colour, shape, size, and aroma. Then ask what cannot be seen in the finished leaf: who made it, what decisions they took, what the weather was like, and what kind of drinker or market they imagined."},
-        {"type": "heading", "level": 2, "text": "A five-minute story: skill is not a recipe"},
-        {"type": "para", "text": "A process list can say “wither, roll, oxidize, dry,” but it cannot fully contain a maker’s knowledge. When is a leaf withered enough? How does it feel in the hand? What changes when the air is humid? When should heat be applied? Such decisions are learned through bodies, tools, environments, teachers, repetition, and comparison."},
-        {"type": "para", "text": "That is why this table avoids presenting one method as universal or one serving style as the only authentic Chinese tea. China contains many tea-producing regions, histories, classes of consumers, commercial systems, and everyday habits. Formal gongfu-style preparation is one important practice, but tea also appears in thermoses, large mugs, workplaces, restaurants, family kitchens, travel flasks, and gifts."},
-        {"type": "para", "text": "The phrase “one leaf, many teas” therefore carries two meanings. One plant can be transformed in many ways, and one tradition can live in many social settings."},
-        {"type": "heading", "level": 2, "text": "Historical background"},
-        {"type": "para", "text": "Physical evidence supports cautious claims about tea use more than two thousand years ago; it does not justify repeating every origin legend as archaeological fact. The exhibition therefore avoids the convenient slogan that tea possesses one continuous, unchanged five-thousand-year history."},
-        {"type": "para", "text": "UNESCO’s description of traditional tea-processing techniques and associated social practices in China is useful because it links cultivation, picking, processing, drinking, and sharing. Yet heritage recognition should not freeze living knowledge. Techniques continue to change through research, machinery, markets, climate, tourism, branding, education, and the work of tea makers."},
-        {"type": "heading", "level": 2, "text": "Hospitality and the everyday"},
-        {"type": "para", "text": "A cup can welcome a guest, mark a pause in work, support study, carry a gift relationship, or become a performance of expertise. Hospitality is never automatic: someone buys the tea, heats the water, cleans the vessels, learns the sequence, serves, explains, and notices other people’s comfort."},
-        {"type": "para", "text": "This labour is part of tea culture. The table asks visitors to see not only beautiful objects but also the work that makes a shared cup possible."},
-        {"type": "heading", "level": 2, "text": "Look closely"},
+        {"type": "heading", "level": 1, "text": "Chinese Tea"},
+        {"type": "heading", "level": 2, "text": "Quick View"},
+        {"type": "para", "text": "Green tea, white tea, oolong, black tea, and dark tea can all begin with the same plant: Camellia sinensis. What makes them different is what people do with the fresh leaves after picking—how they rest, heat, roll, oxidize, dry, or continue to transform."},
+        {"type": "para", "text": "You do not need to memorize every process. Look at the leaves, smell the tea, and compare colour and shape. One plant can become many teas because knowledge, tools, timing, and local practice shape it in different ways."},
+        {"type": "heading", "level": 2, "text": "Skill, Not a Recipe"},
+        {"type": "para", "text": "A process list can say “wither, roll, oxidize, dry,” but it cannot capture a maker’s judgment: how withered is “enough,” how the leaf should feel, when to add heat. These decisions come from the body, the season, and years of comparison—which is why this table avoids treating one method, or one serving style, as the only real Chinese tea. Gongfu-style preparation is one important practice among many; tea also lives in thermoses, office mugs, family kitchens, and gifts."},
+        {"type": "heading", "level": 2, "text": "Historical Background"},
+        {"type": "para", "text": "Physical evidence supports cautious claims about tea use more than two thousand years ago—not a single unbroken “five-thousand-year” history. UNESCO’s recognition of Chinese tea-processing techniques is useful because it links growing, picking, processing, and sharing, but heritage recognition should not freeze a living practice: technique keeps changing through research, climate, markets, and the people who make tea."},
+        {"type": "heading", "level": 2, "text": "Hospitality and the Everyday"},
+        {"type": "para", "text": "A cup can welcome a guest, mark a pause in work, or become a small performance of expertise—and none of that happens automatically. Someone buys the tea, heats the water, cleans the vessels, and notices whether a guest is comfortable. That labour is part of tea culture too."},
+        {"type": "heading", "level": 2, "text": "Look Closer"},
         {"type": "triad", "items": [
             {"label": "LOOK", "text": "Find one visible change in the leaf."},
             {"label": "ASK", "text": "Which part of the process depends on skilled judgment?"},
             {"label": "REMEMBER", "text": "Tradition is not a frozen recipe. It lives through people, places, and repeated practice."},
         ]},
+        {"type": "para", "text": "Deeper process terms — withering, oxidation, microbial transformation, and more — are explained in the Tea Glossary."},
         {"type": "keywords", "items": ["Camellia sinensis", "craft", "withering", "heat-fixing", "oxidation", "microbial transformation", "drying", "gongfu tea", "hospitality", "living tradition"]},
-        {"type": "image", "tone": "green", "pending": True, "caption": "Six approved leaf samples on the exhibition tray",
-         "alt": "Six small containers hold teas with different colours and leaf shapes, showing how one tea plant can be transformed through different local processes."},
-        {"type": "image", "tone": "tan", "pending": True, "caption": "Original process diagram (not a generic tea-factory infographic)",
-         "alt": "Original diagram showing withering, heat-fixing, rolling, oxidation, and drying as connected decisions rather than a fixed assembly line."},
-        {"type": "image", "tone": "gold", "pending": True, "caption": "Hui Yang’s teaware studies, or a photograph of the Edmonton exhibition table",
-         "alt": "Painted studies of teaware, or a photograph of the physical Chinese Tea table in Edmonton."},
-        {"type": "note", "style": "notice", "label": "Optional audio", "text": "A 45-second recording of a maker or curator describing one sensory decision, with a full transcript, may appear here."},
     ],
 }
 
 PAGES["table-wellness-goji"] = {
-    "title": "Wellness and Goji Stories | Go Have Tea",
-    "meta": "Goji shrubs have grown in Edmonton’s river valley and family gardens since Chinese migrants arrived in the 1890s — a story of migration, family knowledge, and everyday care.",
+    "title": "Wellness & Goji Stories | Go Have Tea",
+    "meta": "Goji shrubs have grown in Edmonton’s river valley and family gardens since Chinese migrants arrived in the 1890s — researched primarily by Yong Fei Guan (关咏霏), Edmonton Goji Map.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "Wellness & Goji Stories"},
-        {"type": "note", "style": "notice", "label": "QR label", "text": "FOLLOW THE GOJI"},
-        {"type": "heading", "level": 2, "text": "30-second view"},
+        {"type": "heading", "level": 1, "text": "Wellness & Goji"},
+        {"type": "heading", "level": 2, "text": "Quick View"},
         {"type": "para", "text": "Plants travel with people. Goji shrubs have grown in Edmonton since Chinese migrants arrived in the 1890s. Today they can be found in the river valley and in family gardens."},
         {"type": "para", "text": "Here, wellness is not a promise of cure. It is a story about migration, family knowledge, adaptation, trade, hospitality, and everyday care."},
-        {"type": "heading", "level": 2, "text": "What you are seeing on the table"},
-        {"type": "para", "text": "The goji branch, dried berries, map, floral infusions, and community practice cards connect local plants with memories and routes. Some cups contain true tea from Camellia sinensis. Others are more precisely called herbal infusions or tisanes. Everyday Chinese speech may still call both kinds “tea.”"},
-        {"type": "para", "text": "This difference in naming is not a correction of community language. It helps visitors notice how botanical, commercial, medical, and everyday categories overlap without being identical."},
-        {"type": "heading", "level": 2, "text": "Edmonton goji"},
-        {"type": "para", "text": "Artist-researcher Yong Fei Guan’s Living History of Gojis in Edmonton and Edmonton Goji Map bring together plant life, Chinese Canadian history, family gardens, neighbourhood knowledge, and public art. The project asks us to see goji not merely as a packaged “superfood,” but as a companion of migration."},
-        {"type": "para", "text": "In Edmonton, goji can be a river-valley shrub, a backyard plant, an ingredient in soup or an infusion, a gift between neighbours, a memory of an older family member, or a subject of contemporary art. One plant connects many scales of life."},
-        {"type": "buttons", "items": [{"label": "Open the Edmonton Goji Map", "href": "https://edmonton-goji.github.io/Map/", "external": True}]},
-        {"type": "heading", "level": 2, "text": "A five-minute story: plants take root twice"},
-        {"type": "para", "text": "A plant takes root in soil, but it can also take root in memory. Migrants carry seeds, tastes, names, techniques, and expectations. A new climate changes what survives and how it is used. Neighbours exchange cuttings. Children may recognize a packaged berry before they recognize the shrub. A health-food label may describe the same plant differently from a grandparent or gardener."},
-        {"type": "para", "text": "The Edmonton goji story makes migration visible without reducing it to a simple story of cultural preservation. Plants adapt. People adapt. Meanings change. The plant becomes local without losing its longer routes."},
-        {"type": "heading", "level": 2, "text": "Other routes of care"},
-        {"type": "para", "text": "The table also introduces floral and herbal infusions and Canadian-grown American ginseng as secondary cross-Pacific stories. These materials show that movement does not go in only one direction. Plants, products, knowledge, and value travel between North America and Asia through trade, families, professional practice, and popular wellness culture."},
-        {"type": "para", "text": "The exhibition does not rank family knowledge against professional knowledge or modern science. It asks how different forms of authority meet in an everyday cup—and where responsible limits are needed."},
-        {"type": "heading", "level": 2, "text": "Osmanthus: a small flower, a long fragrance"},
-        {"type": "para", "text": "Dried osmanthus may be infused alone or paired with green, oolong, or black tea. Without tea leaves, it is more precisely a floral infusion, though it is commonly called guihua cha in Chinese."},
+        {"type": "note", "style": "notice", "label": "Primary research contributor", "text": "Yong Fei Guan (关咏霏). This section is based primarily on Guan’s research and public work on Edmonton goji. His Edmonton Goji Map follows the plant through the river valley, community histories, art, and changing ideas of home."},
+        {"type": "buttons", "items": [{"label": "Explore the Edmonton Goji Map", "href": "https://edmonton-goji.github.io/Map/", "external": True}]},
+        {"type": "heading", "level": 2, "text": "A Plant on the Move"},
+        {"type": "para", "text": "Artist-researcher Yong Fei Guan’s Living History of Gojis in Edmonton and Edmonton Goji Map bring together plant life, Chinese Canadian history, family gardens, neighbourhood knowledge, and public art. In Edmonton, goji can be a river-valley shrub, a backyard plant, a gift between neighbours, a memory of an older family member, or a subject of contemporary art—not just a packaged “superfood.”"},
+        {"type": "heading", "level": 2, "text": "Plants Take Root Twice"},
+        {"type": "para", "text": "A plant takes root in soil, but also in memory. Migrants carry seeds, tastes, names, and expectations into a new climate that changes what survives and how it is used—neighbours exchange cuttings, and a child may recognize a packaged berry before the shrub itself. The Edmonton goji story is not a simple “preservation” story: the plant adapts, people adapt, and meaning changes, without losing its longer route here."},
+        {"type": "heading", "level": 2, "text": "Care, Not Cure"},
+        {"type": "para", "text": "The table also introduces floral and herbal infusions and Canadian-grown American ginseng, showing that movement runs in both directions between North America and Asia. The exhibition does not rank family knowledge against professional or scientific knowledge—it asks how different kinds of authority meet in an everyday cup, and where a real health question belongs with a healthcare professional instead."},
+        {"type": "note", "style": "notice", "label": "Educational notice", "text": "This page shares cultural histories and community practices. It does not provide medical advice or recommend treatment."},
+        {"type": "heading", "level": 2, "text": "Osmanthus: A Fragrance of the Season"},
+        {"type": "para", "text": "Osmanthus has long been an important seasonal ingredient in Jiangnan, the lower Yangtze region of China. Its small flowers are gathered for their distinctive fragrance and used in tea, sweet osmanthus preserved with sugar, desserts, and seasonal drinks."},
+        {"type": "para", "text": "“Osmanthus tea” can mean tea leaves scented or blended with osmanthus, or an infusion made mainly from the flowers. Everyday names do not always follow strict botanical categories. At the exhibition table, visitors can see dried osmanthus and an osmanthus tea display, then consider how fragrance carries memories of season and place."},
         {"type": "quote", "text": "桂子月中落，天香云外飘。", "attribution": "Traditionally attributed to Song Zhiwen, “Lingyin Temple” (Tang dynasty)"},
-        {"type": "para", "text": "The poster’s couplet imagines fragrance moving among moonlight, a mountain temple, and clouds. In Edmonton, the question becomes personal: where does this fragrance take you?"},
-        {"type": "note", "style": "notice", "label": "Educational notice", "text": "This page shares cultural histories and community practices. It does not provide medical advice or recommend treatment. Herbs and foods can cause allergies or interact with medicines. For individual health questions, consult a qualified healthcare professional."},
-        {"type": "heading", "level": 2, "text": "Look closely"},
+        {"type": "heading", "level": 2, "text": "Exhibition Table"},
+        {"type": "para", "text": "At the physical table, the goji branch, dried berries, map, floral infusions, and community practice cards connect local plants with memories and routes. Some cups contain true tea from Camellia sinensis; others are more precisely herbal infusions or tisanes—everyday Chinese speech may still call both “tea.”"},
+        {"type": "heading", "level": 2, "text": "Look Closer"},
         {"type": "triad", "items": [
             {"label": "TRACE", "text": "Follow goji into Edmonton."},
             {"label": "ASK", "text": "Which plant makes you think of home?"},
             {"label": "REMEMBER", "text": "Care is a practice and a relationship, not a universal cure claim."},
         ]},
-        {"type": "keywords", "items": ["goji", "migration", "take root", "home", "care", "herbal infusion", "tisane", "osmanthus", "American ginseng", "community knowledge"]},
-        {"type": "image", "tone": "green", "pending": True, "caption": "Edmonton goji photograph, or the physical exhibition table",
-         "alt": "A goji branch and dried red berries sit beside an Edmonton map and community story cards, linking a plant to migration, gardens, memory, and care."},
-        {"type": "note", "style": "pending", "label": "Community images and garden addresses", "text": "Publish only with documented permission; private home locations are never exposed."},
+        {"type": "keywords", "items": ["goji", "migration", "take root", "home", "care", "herbal infusion", "tisane", "osmanthus", "American ginseng", "Yong Fei Guan"]},
     ],
 }
 
 PAGES["table-bubble-tea"] = {
-    "title": "Build a Bubble Tea | Go Have Tea",
+    "title": "Bubble Tea: Build a Cup | Go Have Tea",
     "meta": "Pearl milk tea developed in Taiwan in the 1980s and travelled fast — build a cup, then look behind it at customization, franchising, and service labour.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "Bubble Tea: Build a Cup"},
-        {"type": "note", "style": "notice", "label": "QR label", "text": "BUILD A CUP"},
-        {"type": "heading", "level": 2, "text": "30-second view"},
-        {"type": "para", "text": "Pearl milk tea developed in Taiwan in the 1980s, although two teahouses claim its invention. It travelled quickly because tea, milk, sweetness, ice, and toppings could be separated, recombined, and customized."},
-        {"type": "para", "text": "Build a cup, then look behind it."},
-        {"type": "heading", "level": 2, "text": "What you are seeing on the table"},
-        {"type": "para", "text": "The cup template and stickers turn a menu into a small design system. Visitors choose a base, milk, sweetness, ice, toppings, and mood. There is no single correct cup."},
-        {"type": "para", "text": "The activity is playful, but it also reveals how choice is organized. A modern milk tea menu makes hundreds of possible combinations feel clear and repeatable."},
-        {"type": "heading", "level": 2, "text": "Build a cup"},
+        {"type": "heading", "level": 1, "text": "Bubble Tea"},
+        {"type": "heading", "level": 2, "text": "Quick View"},
+        {"type": "para", "text": "Bubble tea is a drink, a customizable menu, a service system, and a social space. Developed in Taiwan in the 1980s, it has travelled through shops, franchises, digital ordering, migration, and youth culture. This table looks beyond the finished cup to the choices, ingredients, equipment, and labour that make it possible."},
+        {"type": "heading", "level": 2, "text": "Build a Cup"},
         {"type": "bubble_builder"},
-        {"type": "heading", "level": 2, "text": "A five-minute story: invention and disagreement"},
-        {"type": "para", "text": "It is safest to say that pearl milk tea developed in Taiwan in the 1980s. Hanlin Tea Room and Chun Shui Tang both tell origin stories, and the exact claim remains contested. The exhibition does not resolve the dispute in favour of one company."},
-        {"type": "para", "text": "This uncertainty is part of the history. Invention is often narrated after a product becomes valuable. Brand stories, court disputes, public memory, and national cultural promotion all help turn a drink into an icon."},
-        {"type": "heading", "level": 2, "text": "Why bubble tea travels so well"},
-        {"type": "para", "text": "Bubble tea can be shaken, photographed, branded, franchised, and adjusted to local tastes. Its modular form allows shops to change tea bases, milk options, sugar levels, toppings, seasonal flavours, cup graphics, and ordering technologies while keeping the drink recognizable."},
-        {"type": "para", "text": "The same modularity connects “slow” and “quick” tea worlds. Early Taiwanese tea shops offered places to sit, eat, talk, and spend time. Later small-format counters and chains increased speed, portability, and repetition. Neither form is simply more authentic. Each organizes time, space, labour, and social life differently."},
-        {"type": "heading", "level": 2, "text": "Behind the cup"},
-        {"type": "para", "text": "Customization depends on standardization. Someone develops recipes, sources tea and toppings, manages cold storage, prints cups, trains workers, maintains machines, handles digital orders, and performs friendly service under time pressure."},
-        {"type": "para", "text": "The bright menu and cheerful cup can hide this labour. The exhibition asks visitors to enjoy choice while also noticing the systems that make choice possible."},
-        {"type": "heading", "level": 2, "text": "Bubble tea in Edmonton"},
-        {"type": "para", "text": "In Edmonton, bubble tea is connected with migration, student life, shopping centres, Chinatown and suburban commercial areas, family entrepreneurship, global chains, independent shops, and social media. The map does not rank stores. It uses public, permission-appropriate stories to ask how a Taiwanese drink becomes local in different neighbourhoods."},
-        {"type": "heading", "level": 2, "text": "Make and reflect"},
+        {"type": "heading", "level": 2, "text": "Invention and Disagreement"},
+        {"type": "para", "text": "It is safest to say that pearl milk tea developed in Taiwan in the 1980s—Hanlin Tea Room and Chun Shui Tang both tell origin stories, and the exhibition does not resolve the dispute in favour of one company. That uncertainty is itself historical: invention is often narrated only after a product becomes valuable, and brand stories, legal disputes, and national promotion all help turn a drink into an icon."},
+        {"type": "heading", "level": 2, "text": "Why Bubble Tea Travels So Well"},
+        {"type": "para", "text": "Bubble tea can be shaken, photographed, branded, franchised, and adjusted to local taste—its modular form lets shops vary tea base, milk, sugar, toppings, and ordering technology while keeping the drink recognizable. The same modularity connects “slow” tea shops built for sitting and talking with faster small-format counters built for portability; neither is simply more authentic, each just organizes time and labour differently."},
+        {"type": "heading", "level": 2, "text": "Behind the Cup"},
+        {"type": "para", "text": "Customization depends on standardization. Someone develops recipes, sources tea and toppings, manages cold storage, trains workers, maintains machines, and keeps service friendly under time pressure—labour that a bright menu and a cheerful cup can make easy to forget."},
+        {"type": "heading", "level": 2, "text": "Bubble Tea in Edmonton"},
+        {"type": "para", "text": "In Edmonton, bubble tea connects with migration, student life, shopping centres, Chinatown and suburban commercial areas, family entrepreneurship, global chains, independent shops, and social media—a Taiwanese drink becoming local in different neighbourhoods."},
+        {"type": "heading", "level": 2, "text": "Make and Reflect"},
         {"type": "triad", "items": [
-            {"label": "MAKE", "text": "Build a cup with stickers."},
+            {"label": "MAKE", "text": "Build a cup above."},
             {"label": "ASK", "text": "Which choice feels most like you, and why?"},
             {"label": "LOOK BEHIND THE CUP", "text": "What labour, ingredients, transport, and technology made your choices possible?"},
         ]},
         {"type": "keywords", "items": ["pearl milk tea", "Taiwan", "shaken tea", "customization", "modular menu", "franchising", "supply chain", "service labour", "diaspora", "social media"]},
-        {"type": "image", "tone": "tan", "pending": True, "caption": "Completed visitor cup cards, photographed without names or faces",
-         "alt": "A paper bubble-tea cup is covered with stickers for tea base, sweetness, ice, toppings, and mood, turning menu choices into an activity about mobility and labour."},
-        {"type": "image", "tone": "gold", "pending": True, "caption": "History timeline: 1980s Taiwan; diaspora shops; franchising; platform ordering and social media — with “adaptation” nodes rather than a one-way diffusion arrow",
-         "alt": "Restrained timeline of bubble tea's spread, shown as adaptation nodes rather than a single diffusion arrow."},
-        {"type": "image", "tone": "green", "pending": True, "caption": "Tools, sealing film, cup labels, menu modules, and cleaned work surfaces",
-         "alt": "Close photographs of bubble tea shop tools and surfaces; worker photography requires separate permission."},
     ],
 }
 
@@ -234,17 +184,9 @@ PAGES["posters"] = {
     "meta": "Calligraphy, painting, poetry, objects, and Edmonton landscapes carry the exhibition’s central questions across thirteen posters.",
     "blocks": [
         {"type": "heading", "level": 1, "text": "Poster Gallery"},
-        {"type": "para", "text": "These posters are part of the exhibition, not advertisements added after it. They carry its central questions through calligraphy, painting, poetry, objects, and Edmonton landscapes."},
-        {"type": "para", "text": "The gallery brings together three related groups:"},
-        {"type": "list", "items": [
-            "Go Have Tea: Words for Attention — curatorial phrases, classical lines, Chan and Daoist resonances.",
-            "Tea in Many Tongues: Edmonton as a Shared Table — words, routes, neighbourhoods, and coexistence without sameness.",
-            "Plants Travel: Osmanthus and Goji — fragrance, plant movement, memory, and the boundary between tea and infusion.",
-        ]},
-        {"type": "para", "text": "Each poster page provides a high-resolution image, a full text transcript, historical context, artwork information, the curator’s interpretation, alt text, and an approved download where rights allow."},
-        {"type": "note", "style": "pending", "label": "Gallery publication note", "text": "The online gallery includes only approved final posters and clearly identified final variants. Drafts containing incomplete calligraphy, incorrect citations, non-approved decorative elements, or artwork not made by the credited artists stay in the internal design archive."},
+        {"type": "para", "text": "Created around the three Heritage Festival tables, this poster series brings the exhibition’s ideas into images, calligraphy, and short texts."},
         {"type": "gallery_grid", "items": [
-            {"title": "Beyond Tea", "href": "/en/posters/beyond-tea/", "sub": "There is more to tea than tea."},
+            {"title": "Beyond Tea", "href": "/en/posters/beyond-tea/", "sub": "Beyond the drink: the people, labour, and histories tea carries."},
             {"title": "Pause. Sip. Be Here.", "href": "/en/posters/pause-sip-be-here/", "sub": "Chan and tea share one taste."},
             {"title": "Go Have Tea", "href": "/en/posters/go-have-tea/", "sub": "Go have some tea."},
             {"title": "Harmony, Not Sameness", "href": "/en/posters/harmony-not-sameness/", "sub": "Harmony without sameness."},
@@ -263,10 +205,10 @@ PAGES["posters"] = {
 
 PAGES["poster-beyond-tea"] = {
     "title": "Beyond Tea | Poster | Go Have Tea",
-    "meta": "Poster: Beyond Tea / 茶外有茶 — there is more to tea than tea.",
+    "meta": "Poster: Beyond Tea / 茶外有茶 — the people, labour, and histories tea carries.",
     "blocks": [
         {"type": "heading", "level": 1, "text": "Beyond Tea"},
-        {"type": "poster_meta", "chinese": "茶外有茶", "translation": "There is more to tea than tea."},
+        {"type": "poster_meta", "chinese": "茶外有茶", "translation": "Beyond the drink: the people, labour, and histories tea carries."},
         {"type": "heading", "level": 2, "text": "Poster transcript"},
         {"type": "para", "text": "Created for this exhibition, 茶外有茶 looks beyond tea as a drink to how it is grown, made, circulated, and shared—and to the people, labour, and histories involved."},
         {"type": "quote", "text": "Most people turn to wine; who understands the fragrance tea can bring?", "attribution": "Jiaoran, “Drinking Tea with Lu Yu on the Ninth Day” (Tang dynasty)"},
@@ -275,9 +217,7 @@ PAGES["poster-beyond-tea"] = {
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "“Beyond Tea” names the method of the whole exhibition. A cup contains more than a beverage: plants, land, skill, labour, transport, branding, service, memory, and relationships. The phrase asks visitors to look through the object without looking past the people who made it."},
         {"type": "heading", "level": 2, "text": "Artwork note"},
-        {"type": "para", "text": "Uses an approved work or detail by Hui Yang and approved calligraphy by Ying (Joy) Wen where present. The exact source image is credited beside the poster rather than one general credit for the entire gallery."},
-        {"type": "image", "tone": "berry", "pending": True, "caption": "Beyond Tea poster",
-         "alt": "Warm-toned poster combining the phrase Beyond Tea, Chinese calligraphy, a painted landscape or floral detail, and a text panel explaining the people, labour, and histories gathered around tea."},
+        {"type": "para", "text": "Uses an approved work or detail by Yang Hui and approved calligraphy by Wen Ying where present. The exact source image is credited beside the poster rather than one general credit for the entire gallery."},
     ],
 }
 
@@ -296,8 +236,6 @@ PAGES["poster-pause-sip-be-here"] = {
         {"type": "para", "text": "The exhibition treats 禅茶一味 as a later cultural formulation rather than a single ancient doctrine. Tea and Buddhist institutions have long histories of contact, but a modern slogan should not be projected unchanged into every earlier period."},
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "The poster offers a pause inside the festival’s rush. Presence is not withdrawal from the world. It is a way to notice the cup, the people around it, and the conditions of an encounter."},
-        {"type": "image", "tone": "paper", "pending": True, "caption": "Pause. Sip. Be Here. poster",
-         "alt": "A calm poster with white flowers, a tea cup, Chinese calligraphy, and the title Pause. Sip. Be Here, linking everyday tea with attentive presence."},
     ],
 }
 
@@ -314,10 +252,7 @@ PAGES["poster-go-have-tea"] = {
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "In this exhibition, 吃茶去 is neither an escape from difficult conversation nor a mystical answer. It is an invitation to slow classification down. Before explaining ourselves, we sit. Before reducing another person to a category, we share time. Tea does not erase difference; it can help create the conditions in which difference is met with attention."},
         {"type": "heading", "level": 2, "text": "Artwork information"},
-        {"type": "para", "text": "Ying Wen, 吃茶去 / Go Have Tea, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton."},
-        {"type": "note", "style": "pending", "label": "Production check", "text": "Confirm final date and display credit against the artist’s approved label before launch."},
-        {"type": "image", "tone": "green", "pending": True, "caption": "Go Have Tea poster",
-         "alt": "Vertical black calligraphy reading 吃茶去 beside a mountainous painting, with an English text panel explaining ‘Go Have Tea’ as an invitation to pause and return to everyday practice."},
+        {"type": "para", "text": "Wen Ying, 吃茶去 / Go Have Tea, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton."},
     ],
 }
 
@@ -334,10 +269,7 @@ PAGES["poster-harmony-not-sameness"] = {
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "This phrase gives the exhibition an ethical horizon. Coexistence does not require assimilation. Difference should not be converted too quickly into hierarchy, suspicion, or stereotype. A shared cup is meaningful only when the people around it are allowed to remain different."},
         {"type": "heading", "level": 2, "text": "Artwork information"},
-        {"type": "para", "text": "Ying Wen, 和而不同 / Harmony Without Sameness, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton."},
-        {"type": "note", "style": "pending", "label": "Production check", "text": "Confirm final date against the approved artist label."},
-        {"type": "image", "tone": "tan", "pending": True, "caption": "Harmony, Not Sameness poster",
-         "alt": "A framed vertical calligraphy work reading 和而不同 appears beside a small framed painting, with the words Harmony, Not Sameness and an Edmonton map-like background."},
+        {"type": "para", "text": "Wen Ying, 和而不同 / Harmony Without Sameness, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton."},
     ],
 }
 
@@ -346,15 +278,13 @@ PAGES["poster-a-cup-for-the-city"] = {
     "meta": "Poster: A Cup for the City — from Bai Juyi’s wish to send tea to someone who loves it, to Edmonton’s neighbourhoods and newcomers.",
     "blocks": [
         {"type": "heading", "level": 1, "text": "A Cup for the City"},
-        {"type": "quote", "text": "If only I could send this bowl to someone who loves tea.", "attribution": "無由持一磑，寄與愛茶人 — Bai Juyi, “Brewing Tea at a Mountain Spring” (Tang dynasty)"},
+        {"type": "quote", "text": "If only I could send this bowl to someone who loves tea.", "attribution": "無由持一碗，寄與愛茶人 — Bai Juyi, “Brewing Tea at a Mountain Spring” (Tang dynasty)"},
         {"type": "heading", "level": 2, "text": "Historical background"},
         {"type": "para", "text": "The line is from Bai Juyi’s Tang-dynasty poem “Brewing Tea at a Mountain Spring.” The poem begins with the physical acts of drawing water and watching tea brew, then turns an absent companion into the imagined recipient of a bowl."},
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "A cup can be small and still make room for a city. The poster connects an old wish to send tea with Edmonton’s distances, neighbourhoods, newcomers, and relationships. Hospitality is not only receiving someone already present; it can also be an act of remembering someone elsewhere."},
         {"type": "heading", "level": 2, "text": "Artwork note"},
-        {"type": "para", "text": "Uses Hui Yang’s approved mountain landscape as the central image; the features needed to recognize the original work are not cropped away."},
-        {"type": "image", "tone": "gold", "pending": True, "caption": "A Cup for the City poster",
-         "alt": "A vertical mountain painting appears beside Bai Juyi’s line about sending a bowl to someone who loves tea, over a soft Edmonton river-valley collage."},
+        {"type": "para", "text": "Uses Yang Hui’s approved mountain landscape as the central image; the features needed to recognize the original work are not cropped away."},
     ],
 }
 
@@ -368,9 +298,6 @@ PAGES["poster-slow-down-edmonton"] = {
         {"type": "para", "text": "The line appears in a passage of the Daodejing that questions accumulation and fixed self-assertion. It should not be reduced to a modern productivity slogan or an instruction to own less."},
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "At a crowded festival, “less” can mean making enough room to notice. The poster does not ask visitors to reject the city’s energy. It invites a different rhythm within it: fewer rushed conclusions, more attention to the leaf, cup, artwork, and person nearby."},
-        {"type": "note", "style": "correction", "label": "Production correction", "text": "Some draft artwork mislabels the chapter. The public website and final download must use Daodejing chapter 22."},
-        {"type": "image", "tone": "paper", "pending": True, "caption": "Slow Down, Edmonton poster",
-         "alt": "White flowers in a rectangular glass vase sit against a pale winter Edmonton landscape under the title Slow Down, Edmonton and a line from the Daodejing."},
     ],
 }
 
@@ -384,8 +311,6 @@ PAGES["poster-be-still-be-here"] = {
         {"type": "para", "text": "The line is often read as an invitation to observe change without immediately forcing or controlling it. Stillness here is not passivity and does not require leaving social life."},
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "The poster places stillness inside Edmonton’s movement and weather. To be here is to notice where one is standing, who else is present, and how quickly difference can be judged. Attention becomes a quiet form of responsibility."},
-        {"type": "image", "tone": "green", "pending": True, "caption": "Be Still. Be Here. poster",
-         "alt": "A quiet floral still life is paired with the title Be Still. Be Here and a line from chapter 16 of the Daodejing."},
     ],
 }
 
@@ -402,8 +327,6 @@ PAGES["poster-many-names-one-edmonton"] = {
         {"type": "para", "text": "Words such as cha, tea, and chai are often used to sketch routes of language and trade. They are useful clues, not a complete map. Similar words can move along different routes, change meanings, and enter languages more than once."},
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "Edmonton speaks tea in many languages. The poster does not collapse those languages into one origin story. It holds distinct histories beside one another and asks what sharing can mean without erasing difference."},
-        {"type": "image", "tone": "tan", "pending": True, "caption": "Many Names. One Edmonton. poster",
-         "alt": "A vase of white flowers stands over a layered Edmonton river scene, surrounded by selected words for tea in several scripts."},
     ],
 }
 
@@ -418,8 +341,6 @@ PAGES["poster-tea-travels-here"] = {
         {"type": "para", "text": "Movement does not erase difference; it creates new relations."},
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "The illustrated cups and vessels refuse a single visual definition of tea. A porcelain cup, gaiwan, metal filter, mate gourd, fruit infusion, and teapot point toward different practices that meet in one city. The poster is not a taxonomy. It is a neighbourhood portrait made through objects."},
-        {"type": "image", "tone": "gold", "pending": True, "caption": "Tea Travels Here poster",
-         "alt": "Eight illustrated tea vessels are set over a colourful Edmonton map, surrounded by words for tea in several languages."},
     ],
 }
 
@@ -432,14 +353,12 @@ PAGES["poster-a-world-of-tea"] = {
         {"type": "para", "text": "A world of tea. Many ways to share."},
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "This horizontal postcard adapts the multilingual poster series to a portable object. Visitors can take it away, mail it, or use it as a small teaching prompt. Its portability continues the exhibition’s question: what changes when an image, word, or cup travels?"},
-        {"type": "image", "tone": "paper", "pending": True, "caption": "A World of Tea postcard",
-         "alt": "A horizontal pale-green postcard shows eight illustrated tea vessels surrounded by selected words for tea in multiple scripts."},
     ],
 }
 
 PAGES["poster-many-words-for-tea"] = {
     "title": "Many Words for Tea | Poster | Go Have Tea",
-    "meta": "Poster: Many Words for Tea / 一叶多声 — Joy Wen’s Harmony Without Sameness calligraphy at the centre of tea words from ten languages.",
+    "meta": "Poster: Many Words for Tea / 一叶多声 — Wen Ying’s Harmony Without Sameness calligraphy at the centre of tea words from ten languages.",
     "blocks": [
         {"type": "heading", "level": 1, "text": "Many Words for Tea"},
         {"type": "heading", "level": 2, "text": "Poster transcript"},
@@ -448,9 +367,7 @@ PAGES["poster-many-words-for-tea"] = {
         {"type": "heading", "level": 2, "text": "Historical background"},
         {"type": "para", "text": "Tea words can suggest histories of maritime and overland exchange, but language does not prove a single route by itself. The poster therefore uses dotted paths as an invitation to inquire, not as a definitive trade map."},
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
-        {"type": "para", "text": "Joy’s 和而不同 calligraphy sits at the centre. The many names around it do not become one word, just as Edmonton’s communities do not need to become one culture. The shared table is meaningful because difference remains visible."},
-        {"type": "image", "tone": "berry", "pending": True, "caption": "Many Words for Tea poster",
-         "alt": "A colourful layered-paper poster places 和而不同 calligraphy in the centre, surrounded by selected words for tea in Chinese, English, Korean, Arabic, French, Japanese, Swahili, Hindi, Turkish, and Russian, with four painted tea vessels below."},
+        {"type": "para", "text": "Wen Ying’s 和而不同 calligraphy sits at the centre. The many names around it do not become one word, just as Edmonton’s communities do not need to become one culture. The shared table is meaningful because difference remains visible."},
     ],
 }
 
@@ -465,8 +382,6 @@ PAGES["poster-edmonton-community-series"] = {
         ]},
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "This series makes Edmonton more than a background. River-valley colours, map fragments, winter light, neighbourhood language, calligraphy, flowers, teaware, and mountain painting are layered together. The result is not a claim that Edmonton and a classical Chinese landscape are the same. It is a visual study of how images acquire new relations when they travel."},
-        {"type": "image", "tone": "green", "pending": True, "caption": "The five-poster Edmonton Community Tea series",
-         "alt": "Five coordinated vertical posters combine Edmonton maps and river-valley scenes with tea vessels, calligraphy, flowers, and mountain painting."},
     ],
 }
 
@@ -483,62 +398,50 @@ PAGES["poster-osmanthus-infusion"] = {
         {"type": "heading", "level": 2, "text": "Curator’s interpretation"},
         {"type": "para", "text": "The poster begins with a small material and opens into landscape, memory, and naming. Smell can cross time quickly. The visitor prompt—“Where does this fragrance take you?”—invites a personal response without turning it into a medical claim."},
         {"type": "note", "style": "notice", "label": "Educational notice", "text": "For cultural learning and discussion; not medical advice."},
-        {"type": "image", "tone": "gold", "pending": True, "caption": "Osmanthus Infusion poster",
-         "alt": "A pale poster shows dried golden osmanthus in a glass jar and a cream cup, with a painted river landscape and a classical couplet about fragrance."},
     ],
 }
 
 # ------------------------------------------------------------------ artists
 PAGES["artists"] = {
     "title": "Artists | Go Have Tea",
-    "meta": "The paintings of Hui Yang and the calligraphy of Ying (Joy) Wen shape how the exhibition can be read.",
+    "meta": "The paintings of Yang Hui and the calligraphy of Wen Ying shape how the exhibition can be read.",
     "blocks": [
         {"type": "heading", "level": 1, "text": "Artists"},
         {"type": "para", "text": "The exhibition was developed through a conversation among research, painting, calligraphy, graphic composition, and public interpretation. The artworks are not generic signs of “Chinese tradition.” Each one changes how the exhibition can be read."},
-        {"type": "para", "text": "Hui Yang’s paintings bring mountains, vessels, flowers, animals, and material attention into the project. Ying (Joy) Wen’s calligraphy gives visual weight to short phrases that organize the exhibition’s ethics and rhythm."},
-        {"type": "heading", "level": 2, "text": "Credit principle"},
+        {"type": "para", "text": "Yang Hui’s paintings bring mountains, vessels, flowers, animals, and material attention into the project. Wen Ying’s calligraphy gives visual weight to short phrases that organize the exhibition’s ethics and rhythm."},
+        {"type": "heading", "level": 2, "text": "Credit Principle"},
         {"type": "para", "text": "Every artwork is credited beside the image in which it appears. Cropped details still name the artist and original work. Graphic backgrounds, generated elements, and design composition are never credited as original artwork by Yang or Wen."},
         {"type": "gallery_grid", "items": [
-            {"title": "Hui Yang", "href": "/en/artists/hui-yang/", "sub": "Painter"},
-            {"title": "Ying (Joy) Wen", "href": "/en/artists/ying-joy-wen/", "sub": "Calligrapher"},
+            {"title": "Yang Hui", "href": "/en/artists/yang-hui/", "sub": "Painter"},
+            {"title": "Wen Ying", "href": "/en/artists/wen-ying/", "sub": "Calligrapher"},
         ]},
     ],
 }
 
-PAGES["artist-hui-yang"] = {
-    "title": "Hui Yang | Artist | Go Have Tea",
-    "meta": "Painter Hui Yang brings mountains, vessels, flowers, and material attention into the Go Have Tea exhibition.",
+PAGES["artist-yang-hui"] = {
+    "title": "Yang Hui | Artist | Go Have Tea",
+    "meta": "Painter Yang Hui brings mountains, vessels, flowers, and material attention into the Go Have Tea exhibition.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "Hui Yang"},
-        {"type": "para", "text": "Hui Yang is the painter whose works provide many of the exhibition’s visual anchors. Her mountain landscape, teaware studies, floral still lifes, and other approved paintings bring attention to material form, movement, and dwelling."},
+        {"type": "heading", "level": 1, "text": "Yang Hui"},
+        {"type": "para", "text": "Yang Hui contributes painting to Go Have Tea. Her landscapes, teaware, and floral works bring movement, place, and material attention into the exhibition. Rather than serving as a decorative sign of “tradition,” each painting should be encountered as an individual artwork with its own title, date, medium, dimensions, and visual rhythm."},
         {"type": "para", "text": "In After Wang Meng’s Ge Zhichuan Moving His Dwelling, a classical composition is re-situated through a work made in Edmonton. The image of a family moving through mountains can be read not simply as retreat, but as reorientation: a search for rhythm, shelter, dignity, and renewed relation in a changing environment."},
-        {"type": "para", "text": "Within this exhibition, Yang’s work helps connect landscape with migration without claiming that one image can represent all immigrant experience. Her paintings also slow the viewer down. A cup, branch, flower, or rock becomes worthy of sustained looking."},
-        {"type": "heading", "level": 2, "text": "Featured work"},
-        {"type": "quote", "text": "Hui Yang, After Wang Meng’s Ge Zhichuan Moving His Dwelling / 仿王蒙《葛稚川移居图》, 2022, acrylic on canvas, 24 × 60 in., Edmonton."},
-        {"type": "image", "tone": "green", "pending": True, "caption": "Full, uncropped artwork",
-         "alt": "A tall mountain landscape depicts travellers moving through layered rocks, trees, and paths, reworking a composition associated with the Yuan painter Wang Meng."},
-        {"type": "image", "tone": "tan", "pending": True, "caption": "Detail: brushwork", "alt": "Close detail of brushwork from Hui Yang’s mountain landscape."},
-        {"type": "image", "tone": "gold", "pending": True, "caption": "Detail: figures", "alt": "Close detail of travelling figures from Hui Yang’s mountain landscape."},
-        {"type": "note", "style": "pending", "text": "An optional artist statement or audio recording will appear here only after Hui Yang approves the text and recording."},
+        {"type": "heading", "level": 2, "text": "Featured Work"},
+        {"type": "quote", "text": "Yang Hui, After Wang Meng’s Ge Zhichuan Moving His Dwelling / 仿王蒙《葛稚川移居图》, 2022, acrylic on canvas, 24 × 60 in., Edmonton."},
     ],
 }
 
-PAGES["artist-ying-joy-wen"] = {
-    "title": "Ying (Joy) Wen | Calligrapher | Go Have Tea",
-    "meta": "Calligrapher Ying (Joy) Wen created the works 吃茶去 and 和而不同 that give the exhibition its central visual language.",
+PAGES["artist-wen-ying"] = {
+    "title": "Wen Ying | Calligrapher | Go Have Tea",
+    "meta": "Calligrapher Wen Ying created the works 吃茶去 and 和而不同 that give the exhibition its central visual language.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "Ying (Joy) Wen"},
-        {"type": "para", "text": "Ying (Joy) Wen created the calligraphy that gives the exhibition its central visual language. Her works 吃茶去 and 和而不同 appear as original artworks and recur across selected posters and postcards."},
-        {"type": "para", "text": "Calligraphy is not used here as decorative proof of cultural authenticity. The shape, pressure, spacing, and rhythm of the brush make short phrases feel bodily and present. 吃茶去 turns the exhibition’s central idea into an action. 和而不同 makes coexistence without assimilation visible as a vertical sequence of inked characters."},
-        {"type": "para", "text": "The website reproduces the complete works whenever possible. Crops may be used for responsive layouts, but they do not remove characters or distort the spacing between them."},
-        {"type": "heading", "level": 2, "text": "Featured works"},
+        {"type": "heading", "level": 1, "text": "Wen Ying"},
+        {"type": "para", "text": "Wen Ying contributes calligraphy to Go Have Tea. Her works Go Have Tea and Harmony, Not Sameness give the exhibition’s central phrases weight, spacing, gesture, and pace. The website should show the complete calligraphy before using any detail or crop."},
+        {"type": "para", "text": "Calligraphy is not decorative proof of cultural authenticity here. The shape, pressure, spacing, and rhythm of the brush make short phrases feel bodily and present—吃茶去 turns the exhibition’s central idea into an action, and 和而不同 makes coexistence without assimilation visible as a vertical sequence of inked characters."},
+        {"type": "heading", "level": 2, "text": "Featured Works"},
         {"type": "list", "items": [
-            "Ying Wen, 吃茶去 / Go Have Tea, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton.",
-            "Ying Wen, 和而不同 / Harmony Without Sameness, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton.",
+            "Wen Ying, 吃茶去 / Go Have Tea, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton.",
+            "Wen Ying, 和而不同 / Harmony Without Sameness, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton.",
         ]},
-        {"type": "note", "style": "pending", "label": "Production check", "text": "Confirm dates and preferred English name order with the artist before publication."},
-        {"type": "image", "tone": "paper", "pending": True, "caption": "吃茶去, calligraphy by Ying (Joy) Wen",
-         "alt": "Four large black-brush characters, 吃茶去, are written vertically on pale paper, with red seals near the lower edge."},
     ],
 }
 
@@ -549,9 +452,7 @@ PAGES["curator"] = {
     "blocks": [
         {"type": "heading", "level": 1, "text": "Curator"},
         {"type": "heading", "level": 2, "text": "Short biography"},
-        {"type": "para", "text": "Junhong (Summer) Ma is a cultural anthropologist and postdoctoral researcher at Xiamen University. Her research examines contemporary Chinese and East Asian tea culture, tea industries, cultural authority, service labour, branding, education, migration, and the movement of tea knowledge between Taiwan, mainland China, and Canada."},
-        {"type": "image", "tone": "tan", "pending": True, "caption": "The curator installing or discussing the exhibition table",
-         "alt": "The curator working at the exhibition table, or an approved portrait."},
+        {"type": "para", "text": "Junhong (Summer) Ma is a cultural anthropologist and postdoctoral researcher at Xiamen University. Her research examines contemporary Chinese and East Asian tea culture, tea industries, cultural authority, service labour, branding, education, migration, and the movement of tea knowledge between Taiwan, mainland China, and Canada. She holds a PhD from the University of Alberta."},
         {"type": "heading", "level": 2, "text": "Curator’s statement"},
         {"type": "para", "text": "I created this exhibition because public conversations about Chinese tea often move in two unhelpful directions. Tea is either compressed into a timeless national tradition or reduced to a consumer choice. Both approaches miss the people and relationships that make tea possible."},
         {"type": "para", "text": "The three tables begin instead with movement. A leaf moves through skilled hands and becomes many teas. A plant moves with migrants and takes root in Edmonton. A drink developed in Taiwan moves through shops, franchises, digital menus, and young people’s social worlds."},
@@ -560,28 +461,29 @@ PAGES["curator"] = {
         {"type": "quote", "text": "Junhong (Summer) Ma", "attribution": "Curator and cultural anthropologist"},
         {"type": "buttons", "items": [
             {"label": "About the Exhibition", "href": "/en/about/"},
-            {"label": "Sources & Credits", "href": "/en/sources-credits/", "variant": "secondary"},
+            {"label": "Credits", "href": "/en/sources-credits/", "variant": "secondary"},
         ]},
     ],
 }
 
 # ------------------------------------------------------------------- map
 PAGES["edmonton-tea-map"] = {
-    "title": "Edmonton Tea Map | Go Have Tea",
-    "meta": "Tea in Edmonton lives in river-valley plants, family gardens, Chinatown histories, and shared tables — a restrained map layer, not a business directory.",
+    "title": "Edmonton Stories | Go Have Tea",
+    "meta": "Tea in Edmonton lives in river-valley plants, family gardens, Chinatown histories, and shared tables — Edmonton Goji, the Chinese Pavilion, and the stories that connect them.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "Edmonton Tea Map"},
+        {"type": "heading", "level": 1, "text": "Edmonton Stories"},
         {"type": "para", "text": "Tea in Edmonton lives in more than tea shops. It appears in river-valley plants, family gardens, Chinatown histories, community events, grocery shelves, bubble tea counters, restaurants, student routines, thermoses, art projects, and shared tables."},
-        {"type": "para", "text": "This map is not a ranking or a complete business directory. It is an exhibition layer that connects places with stories represented in the three tables."},
-        {"type": "heading", "level": 2, "text": "Map layers"},
-        {"type": "list", "items": [
-            "Plants and migration — begin with the Edmonton Goji Map and the public history of goji in the river valley and family gardens. Private residential locations are never republished without explicit permission.",
-            "Chinese Canadian history — area-level historical context for Chinatown, Boyle Street, and McCauley, linking to reliable public history rather than inventing a single “first tea shop” narrative.",
-            "Tea spaces — tea houses, shops, restaurants, community organizations, and temporary events, added only when an entry has a verifiable public address and a clear connection to an exhibition story.",
-            "Bubble tea and youth culture — selected clusters or permission-based stories rather than an attempt to list every business.",
-            "The exhibition — the Heritage Festival pavilion during the event, with dates and opening hours confirmed by the organizer.",
-        ]},
-        {"type": "heading", "level": 2, "text": "Public entries"},
+        {"type": "para", "text": "This is not a ranking or a complete business directory. It is an exhibition layer connecting places with the stories in the three tables."},
+        {"type": "heading", "level": 2, "text": "Edmonton Goji"},
+        {"type": "para", "text": "This module is built primarily on Yong Fei Guan (关咏霏)’s research and the Edmonton Goji Map, which follows the plant through the river valley, community histories, art, and changing ideas of home."},
+        {"type": "buttons", "items": [{"label": "Explore the Edmonton Goji Map", "href": "https://edmonton-goji.github.io/Map/", "external": True}]},
+        {"type": "heading", "level": 2, "text": "Chinese Pavilion"},
+        {"type": "para", "text": "Go Have Tea is presented as part of the Chinese Pavilion at the 2026 Edmonton Heritage Festival, supported by the Chinese Graduates Association of Alberta (CGAA), which has sponsored the pavilion since 1978."},
+        {"type": "buttons", "items": [{"label": "Visit the CGAA website", "href": "https://www.cgaa.ab.ca/", "external": True}]},
+        {"type": "heading", "level": 2, "text": "Tea in Everyday Edmonton"},
+        {"type": "para", "text": "Fieldwork photographs and neighbourhood stories will appear here as they are gathered and cleared for public use."},
+        {"type": "heading", "level": 2, "text": "Map and List View"},
+        {"type": "para", "text": "This map is not the only way in—every point below also appears as a plain-text list. Categories are never colour-only, and private home addresses or precise plant locations are never published without explicit permission."},
         {"type": "map_list", "groups": [
             {"title": "Plants and migration", "entries": [
                 {"name": "Edmonton Goji Map", "desc": "Project-wide link to Yong Fei Guan’s map and bilingual eBook."},
@@ -591,12 +493,12 @@ PAGES["edmonton-tea-map"] = {
                 {"name": "Edmonton Chinatown / Boyle Street–McCauley", "desc": "Historical context area; no invented business genealogy."},
             ]},
             {"title": "The exhibition", "entries": [
-                {"name": "2026 Heritage Festival exhibition", "desc": "Temporary event marker, added once logistics are confirmed by the organizer."},
+                {"name": "2026 Heritage Festival — Chinese Pavilion", "desc": "Hawrelak Park, August 1–3, 2026."},
             ]},
         ]},
-        {"type": "buttons", "items": [{"label": "Open the Edmonton Goji Map", "href": "https://edmonton-goji.github.io/Map/", "external": True}]},
+        {"type": "heading", "level": 2, "text": "Share a Story — Future"},
+        {"type": "para", "text": "Community-submitted stories will open once a clear process for consent, credit, and withdrawal is in place. This is not yet available."},
         {"type": "heading", "level": 2, "text": "Where does tea live in your Edmonton?"},
-        {"type": "note", "style": "pending", "text": "This first release deliberately keeps the map to a restrained list view: no colour-only categories, and no private home addresses or precise plant locations. Community-submitted stories, an expanded business directory, and any future audio stories will be added only after permissions, consent, transcripts, and a withdrawal process are in place."},
     ],
 }
 
@@ -609,19 +511,16 @@ PAGES["learning"] = {
         {"type": "para", "text": "These resources help visitors, teachers, families, and community organizations continue the exhibition. They are designed around observation, comparison, storytelling, and ethical discussion—not around memorizing one correct definition of tea culture."},
 
         {"type": "heading", "level": 2, "text": "One-Minute Exhibition Guide"},
-        {"type": "note", "style": "pending", "label": "go-have-tea-one-minute-guide-en.pdf", "text": "Downloadable PDF coming soon — full text is below."},
         {"type": "para", "text": "Tea travels as leaf, plant, drink, skill, memory, and work. At the Chinese Tea table, look for how one plant becomes many teas. At the Wellness table, follow goji into Edmonton’s river valley and family gardens. At the Bubble Tea table, build a cup and then ask what labour and systems made your choices possible. In the poster gallery, notice how calligraphy, paintings, poems, and city landscapes change one another. There is no single correct route. Begin with what catches your attention."},
 
         {"type": "heading", "level": 2, "text": "Tea Travels Passport"},
-        {"type": "note", "style": "pending", "label": "tea-travels-passport-en.pdf", "text": "Downloadable PDF coming soon — full text is below."},
         {"type": "para", "text": "Front: BUILD YOUR TEA TRAVELS PASSPORT"},
         {"type": "list", "items": ["Discover a craft.", "Build a milk tea.", "Find Edmonton goji."]},
         {"type": "para", "text": "Collect or place one sticker at each stop. There is no single correct cup."},
         {"type": "para", "text": "Back: What travels when tea travels? skill · memory · plants · labour · care · something else: ______. Which plant, cup, smell, or word makes you think of home?"},
 
         {"type": "heading", "level": 2, "text": "Teacher Guide"},
-        {"type": "note", "style": "pending", "label": "go-have-tea-teacher-guide-en.pdf", "text": "Downloadable PDF coming soon. Suggested level: Grades 4–12, adaptable. Length: 45–60 minutes."},
-        {"type": "para", "text": "Learning goals:"},
+        {"type": "para", "text": "Suggested level: Grades 4–12, adaptable. Length: 45–60 minutes. Learning goals:"},
         {"type": "list", "items": [
             "Distinguish an object from the social relationships that produce it.",
             "Compare preservation, adaptation, invention, and commercialization without treating them as opposites.",
@@ -634,7 +533,6 @@ PAGES["learning"] = {
         {"type": "para", "text": "Activity: Create a “travelling object” card. Trace one ingredient, tool, word, or image across at least three places or people. Mark what changes and what stays recognizable."},
 
         {"type": "heading", "level": 2, "text": "Family Looking Guide"},
-        {"type": "note", "style": "pending", "label": "go-have-tea-family-guide-en.pdf", "text": "Downloadable PDF coming soon — full text is below."},
         {"type": "para", "text": "Find:"},
         {"type": "list", "items": [
             "one leaf with an unexpected shape",
@@ -647,11 +545,9 @@ PAGES["learning"] = {
         {"type": "para", "text": "Talk together: If you could send one cup to someone, who would receive it?"},
 
         {"type": "heading", "level": 2, "text": "Community Conversation Kit"},
-        {"type": "note", "style": "pending", "label": "go-have-tea-community-conversation-en.pdf", "text": "Downloadable PDF coming soon. Length: 45–75 minutes."},
-        {"type": "para", "text": "Open with the phrase harmony without sameness. Invite each participant to name a drink or plant connected with care. Discuss what is gained and lost when a community practice becomes a product, festival display, health trend, or heritage symbol. Close by identifying one way to share a story without claiming to speak for everyone."},
+        {"type": "para", "text": "Length: 45–75 minutes. Open with the phrase harmony without sameness. Invite each participant to name a drink or plant connected with care. Discuss what is gained and lost when a community practice becomes a product, festival display, health trend, or heritage symbol. Close by identifying one way to share a story without claiming to speak for everyone."},
 
         {"type": "heading", "level": 2, "text": "Accessible Text Pack"},
-        {"type": "note", "style": "pending", "label": "go-have-tea-large-print-and-poster-transcripts-en.pdf", "text": "Downloadable PDF coming soon."},
         {"type": "para", "text": "Contents: all main table texts in at least 18-point type; full poster transcripts; image descriptions; glossary; short URLs; educational notice."},
 
         {"type": "note", "style": "notice", "label": "Resource rights note", "text": "Downloadable files may include only images, fonts, maps, and artworks licensed for redistribution. A page that may legally display an embedded image does not automatically have permission to package it in a downloadable PDF."},
@@ -660,59 +556,116 @@ PAGES["learning"] = {
 
 # --------------------------------------------------------------- glossary
 PAGES["glossary"] = {
-    "title": "Glossary | Go Have Tea",
-    "meta": "Key terms from the Go Have Tea exhibition, from Camellia sinensis to public anthropology.",
+    "title": "Tea Glossary | Go Have Tea",
+    "meta": "Basic vocabulary, tea processing, tea culture, and plants and drinks — key terms from the Go Have Tea exhibition, explained.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "Glossary"},
+        {"type": "heading", "level": 1, "text": "Tea Glossary"},
+        {"type": "para", "text": "Forty terms in four groups, each with a short public explanation and one common point of confusion. Water-temperature and brewing guidance lives on the Tea Tips page instead."},
+
+        {"type": "heading", "level": 2, "text": "Basic Vocabulary"},
         {"type": "definition_list", "items": [
-            {"term": "Camellia sinensis", "def": "The plant species from which green, white, yellow, oolong, black, and dark teas are made."},
-            {"term": "Tea / cha / 茶", "def": "A plant, processed leaf, prepared drink, commodity, and social practice. Context matters."},
-            {"term": "Herbal infusion / tisane", "def": "A drink made by steeping plants other than Camellia sinensis. Everyday speech may still call it “tea.”"},
-            {"term": "Gongfu tea / 工夫茶", "def": "Tea preparation emphasizing skill, attention, repeated infusions, and particular regional and social histories. It is not the only Chinese way to make tea."},
-            {"term": "Withering", "def": "Controlled loss of moisture after leaves are picked."},
-            {"term": "Heat-fixing / 杀青", "def": "Heating used to slow enzyme activity and shape later transformation."},
-            {"term": "Oxidation", "def": "Chemical change that affects colour, aroma, and flavour; it is not identical to microbial fermentation."},
-            {"term": "Microbial transformation / fermentation", "def": "Changes involving microorganisms, important in some dark teas and other processes."},
-            {"term": "Pearl milk tea / 珍珠奶茶", "def": "A drink developed in Taiwan in the 1980s, commonly combining tea, milk or creamer, sweetness, ice, and tapioca pearls or other toppings."},
-            {"term": "Customization", "def": "A system that lets customers select components such as base, sugar, ice, and toppings."},
-            {"term": "Service labour", "def": "The work of preparing, explaining, cleaning, scheduling, serving, and managing customer interactions."},
-            {"term": "Goji / 枸杞", "def": "A fruit-bearing shrub with long histories in Asia and a significant living history in Edmonton’s river valley and family gardens."},
-            {"term": "Everyday care", "def": "Repeated practices of feeding, serving, remembering, checking on, and making time for others. It is not the same as medical treatment."},
-            {"term": "Living tradition", "def": "Knowledge and practice renewed by people rather than preserved unchanged."},
-            {"term": "Public anthropology", "def": "Anthropological work created for dialogue with wider publics, often through exhibitions, writing, teaching, art, or community collaboration."},
+            {"term": "Tea plant / Camellia sinensis", "def": "The single plant species behind green, white, yellow, oolong, black, and dark tea. People sometimes assume different tea types come from different plants; in fact almost all of them come from the same species, transformed differently after picking."},
+            {"term": "Tea leaf", "def": "The picked leaf of Camellia sinensis, before or after processing. In everyday speech “tea leaf” can mean the raw leaf on the plant or the finished, dried product in a jar—context usually makes the difference clear."},
+            {"term": "Brewed tea", "def": "The liquid produced once tea leaves meet water. English sometimes uses “tea” for both the leaves and the drink; this exhibition tries to say “brewed tea” or “tea leaves” specifically when the distinction matters."},
+            {"term": "Loose-leaf tea", "def": "Whole or broken tea leaves sold without a bag, typically offering more room for the leaf to unfurl and a wider range of aroma and strength across multiple infusions than a standard tea bag."},
+            {"term": "Tea bag", "def": "A small permeable pouch, usually holding broken or finely cut leaf (“fannings” or “dust”), designed for a single fast infusion. Convenient, but the smaller leaf pieces generally give less nuance than loose leaf."},
+            {"term": "Teaware", "def": "The vessels used to make and serve tea: pots, cups, trays, and tools. Teaware is functional, not merely decorative—its shape and material genuinely change how a tea tastes and how a gathering unfolds."},
+            {"term": "Gaiwan", "def": "A lidded bowl used to steep and serve tea, common across many Chinese tea traditions. It is one option among many, not the single “correct” Chinese teaware—large mugs and thermoses are just as common in daily life."},
+            {"term": "Kettle", "def": "A vessel for heating water for tea. Different teas favour different temperatures (see Tea Tips), so a kettle that lets you control temperature is more useful than one that only boils."},
+            {"term": "Infusion / steep", "def": "The act of letting tea (or another plant) sit in hot water so its flavour and aroma transfer into the liquid. “Infusion” is also used as a noun for the resulting drink, especially for non-tea plants."},
+            {"term": "Tisane / herbal infusion", "def": "A drink made by steeping a plant other than Camellia sinensis—osmanthus or goji, for example. Botanically it is not “tea,” though everyday Chinese and English speech often still calls it tea."},
+        ]},
+
+        {"type": "heading", "level": 2, "text": "Tea Processing"},
+        {"type": "definition_list", "items": [
+            {"term": "Plucking", "def": "Picking fresh leaves and buds from the tea plant. Which leaves are chosen—one bud, two leaves, a coarser plucking—shapes the character and grade of the finished tea before any processing even begins."},
+            {"term": "Withering", "def": "A controlled rest after plucking that lets leaves lose some moisture and soften. It sounds passive, but timing withering correctly is a skilled judgment call, not a fixed number of hours."},
+            {"term": "Fixation / kill-green (杀青)", "def": "A heating step (dry-heat or steam) that halts the enzyme activity responsible for oxidation. It “fixes” a tea’s colour and character at that point, which is why green tea stays green while black tea does not."},
+            {"term": "Rolling / shaping", "def": "Working the withered leaf by hand or machine to bruise cell walls, release aromatic compounds, and give the tea its final shape—curled, twisted, balled, or flat—which also affects how it later infuses."},
+            {"term": "Oxidation", "def": "A chemical reaction between leaf compounds and oxygen, controlled by rolling, time, and humidity, that changes colour and flavour. It is a different process from microbial fermentation, though the two are often confused."},
+            {"term": "Drying", "def": "The final moisture-removal step that stabilizes tea for storage and transport. Drying method and heat level affect aroma; done incorrectly, it can also mask or damage the work of every earlier step."},
+            {"term": "Roasting", "def": "An additional heat treatment, sometimes applied after drying, that develops deeper, toastier, or fruitier notes—common in some oolongs. It is a finishing choice, not a step every tea receives."},
+            {"term": "Scenting", "def": "Blending or layering tea with a fragrant flower or other aromatic, as with osmanthus- or jasmine-scented tea. Scenting can happen through repeated contact with fresh flowers or through blending with dried petals."},
+            {"term": "Microbial transformation / fermentation", "def": "Change driven by microorganisms over time, important in some dark teas and other aged or piled processes. It is often loosely called “fermentation,” but it is chemically distinct from the oxidation used to make black tea."},
+            {"term": "Ageing", "def": "Continued, usually slow change in a tea after processing is complete, sometimes intentional (as with some dark teas and pu’er) and sometimes simply a matter of storage. Not every tea benefits from ageing—many are meant to be drunk fresh."},
+        ]},
+
+        {"type": "heading", "level": 2, "text": "Tea Culture"},
+        {"type": "definition_list", "items": [
+            {"term": "Gongfu tea / 工夫茶", "def": "A preparation style emphasizing skill, attention, and repeated short infusions in small vessels, with specific regional and social histories. It is an important Chinese tea practice, not the only correct one."},
+            {"term": "Hospitality", "def": "The social work of welcoming someone with tea: buying it, heating water, cleaning vessels, serving, and noticing whether a guest is comfortable. Hospitality is a practice, not something that simply happens on its own."},
+            {"term": "Everyday care", "def": "Repeated small acts—serving tea, remembering a preference, checking in on someone—through which people look after each other day to day. It overlaps with wellness language but is not the same as medical treatment."},
+            {"term": "Living tradition", "def": "Knowledge and practice that people keep renewing rather than freezing in place. Calling something a “living tradition” is a reminder that today’s tea makers are still actively shaping it, not just repeating the past."},
+            {"term": "Authenticity", "def": "A claim that a practice, object, or flavour represents the “real” or “original” version of something. This exhibition treats authenticity as a question to investigate—who gets to decide, and why—rather than a label it hands out."},
+            {"term": "Service labour", "def": "The work of preparing, explaining, cleaning, scheduling, and serving that keeps a cup of tea (or bubble tea) moving from ingredients to customer. It is often invisible precisely because it is done well."},
+            {"term": "Customization", "def": "A system that lets a customer choose components—tea base, sugar, ice, toppings—rather than receiving one fixed drink. Customization depends on standardized ingredients and processes behind the counter, even though it feels personal up front."},
+            {"term": "Public anthropology", "def": "Anthropological work made for dialogue with a wider public, not only academic readers—through exhibitions, writing, teaching, or art. This website and the exhibition it documents are both examples of the approach."},
+            {"term": "Curatorial interpretation", "def": "The curator’s own reading of an object, artwork, or theme, offered as one informed perspective rather than a final, neutral fact. This exhibition labels curatorial interpretation clearly so visitors can tell it apart from historical record."},
+            {"term": "Harmony without sameness / 和而不同", "def": "A classical phrase (from the Analects) used here to mean that people can share a table, a city, or a culture without becoming identical. It does not mean disagreement or difference should be smoothed over."},
+        ]},
+
+        {"type": "heading", "level": 2, "text": "Plants and Drinks"},
+        {"type": "definition_list", "items": [
+            {"term": "Goji / 枸杞", "def": "A fruit-bearing shrub with long histories of use across Asia, and a significant, still-living history in Edmonton’s river valley and family gardens since the 1890s. It is a plant and a set of relationships, not just a packaged “superfood.”"},
+            {"term": "Osmanthus / 桂花", "def": "A small, intensely fragrant flower, an important seasonal ingredient in Jiangnan (the lower Yangtze region). Used to scent tea, or infused on its own—see “osmanthus tea” below for that distinction."},
+            {"term": "Osmanthus tea / 桂花茶", "def": "An everyday name that can mean either tea leaves scented with osmanthus, or an infusion made mainly from the flowers themselves without any tea leaf. The name does not tell you which one you have—ask, or check the ingredients."},
+            {"term": "Sweet osmanthus / 糖桂花", "def": "Osmanthus flowers preserved in sugar or syrup, used in desserts, drinks, and cooking across Jiangnan cuisine. It is a pantry ingredient as much as a tea-adjacent one."},
+            {"term": "Bubble tea / pearl milk tea / 珍珠奶茶", "def": "A drink developed in Taiwan in the 1980s, typically combining tea, milk or creamer, sweetness, ice, and tapioca pearls or other toppings. Its exact origin is contested between two Taiwanese teahouses; this exhibition does not settle that dispute."},
+            {"term": "Tea base", "def": "The tea component of a customized drink—black, green, oolong, or fruit tea, for example—chosen before milk, sweetness, and toppings are added. It is the one part of a bubble tea order that is actually tea in the botanical sense."},
+            {"term": "Topping", "def": "An added ingredient in a customized drink—tapioca pearls, jelly, pudding—that changes texture as much as flavour. Toppings are prepared separately and require their own timing, storage, and labour behind the counter."},
+            {"term": "Sweetness level", "def": "A menu option, usually shown as a percentage (0–100%), that lets a customer choose how much sugar syrup goes into a drink. It is a system built to make a wide range of tastes feel simple to order."},
+            {"term": "Ice level", "def": "A menu option controlling how much ice goes into a cold drink, independent of sweetness or tea strength—choosing “less ice” usually means a stronger-tasting, less diluted drink, not just a colder or warmer one."},
+            {"term": "Tapioca pearls / 珍珠", "def": "Chewy balls made from tapioca starch, the topping that gives pearl milk tea its name. They must be cooked, kept warm, and used within hours, which is part of the hidden labour behind a “simple” drink."},
         ]},
     ],
 }
 
 # ---------------------------------------------------------- sources-credits
 PAGES["sources-credits"] = {
-    "title": "Sources & Credits | Go Have Tea",
+    "title": "Credits | Go Have Tea",
     "meta": "Curatorial, artist, and research credits for Go Have Tea, plus the exhibition’s selected public sources.",
     "blocks": [
-        {"type": "heading", "level": 1, "text": "Sources & Credits"},
-        {"type": "heading", "level": 2, "text": "Credit line"},
-        {"type": "para", "text": "Curated by Junhong (Summer) Ma. Original calligraphy by Ying (Joy) Wen. Original paintings and artwork by Hui Yang. Edmonton goji research and map by Yong Fei Guan / Edmonton Goji Map, used or linked with permission where applicable. Presented with CGAA volunteers and exhibition partners."},
-        {"type": "note", "style": "pending", "text": "Final graphic-design, photography, object-loan, community-contributor, and pavilion credits are added before launch."},
-        {"type": "heading", "level": 2, "text": "Selected exhibition sources"},
+        {"type": "heading", "level": 1, "text": "Credits"},
+        {"type": "heading", "level": 2, "text": "Curator"},
+        {"type": "para", "text": "Junhong (Summer) Ma / 马俊红"},
+        {"type": "heading", "level": 2, "text": "Painting"},
+        {"type": "para", "text": "Yang Hui / 杨慧"},
+        {"type": "heading", "level": 2, "text": "Calligraphy"},
+        {"type": "para", "text": "Wen Ying / 温颖"},
+        {"type": "heading", "level": 2, "text": "Edmonton Goji Story and Primary Research Contribution"},
+        {"type": "para", "text": "Yong Fei Guan (关咏霏), Edmonton Goji Map"},
+        {"type": "buttons", "items": [{"label": "Edmonton Goji Map", "href": "https://edmonton-goji.github.io/Map/", "external": True}]},
+        {"type": "heading", "level": 2, "text": "Community Partner"},
+        {"type": "para", "text": "Chinese Graduates Association of Alberta (CGAA). Presented as part of the Chinese Pavilion at the 2026 Edmonton Heritage Festival."},
+        {"type": "buttons", "items": [{"label": "CGAA website", "href": "https://www.cgaa.ab.ca/", "external": True}]},
+        {"type": "heading", "level": 2, "text": "Materials and Generous Support"},
+        {"type": "para", "text": "Yvonne Ho · Tabitha Lian"},
+
+        {"type": "heading", "level": 2, "text": "Selected Exhibition Sources"},
         {"type": "list", "items": [
-            "UNESCO, “Traditional tea processing techniques and associated social practices in China.” ich.unesco.org",
-            "Lu et al., “Earliest tea as evidence for one branch of the Silk Road across the Tibetan Plateau,” Scientific Reports 6 (2016). nature.com",
-            "Taiwan National Immigration Agency, “The origins of bubble tea, one of Taiwan’s most beloved beverages.” news.immigration.gov.tw",
-            "Edmonton Arts Council, “I Am YEG Arts: Yong Fei Guan.” edmontonarts.ca",
-            "Edmonton Goji Map. edmonton-goji.github.io/Map/",
-            "Fort Edmonton Park, “Goji Berry Teahouse.” fortedmontonpark.ca",
-            "W3C, Web Content Accessibility Guidelines (WCAG) 2.2. w3.org/TR/WCAG22/",
+            '<a href="https://ich.unesco.org/en/RL/traditional-tea-processing-techniques-and-associated-social-practices-in-china-01884">UNESCO, “Traditional tea processing techniques and associated social practices in China”</a>',
+            '<a href="https://www.nature.com/articles/srep18955">Lu et al., “Earliest tea as evidence for one branch of the Silk Road across the Tibetan Plateau,” Scientific Reports 6 (2016)</a>',
+            '<a href="https://news.immigration.gov.tw/NewsSection/Detail/8dcaf253-faf4-42c8-87ef-e27eeb7ccee8?lang=EN">Taiwan National Immigration Agency, “The origins of bubble tea, one of Taiwan’s most beloved beverages”</a>',
+            '<a href="https://www.edmontonarts.ca/blog/i-am-yeg-arts-yong-fei-guan">Edmonton Arts Council, “I Am YEG Arts: Yong Fei Guan”</a>',
+            '<a href="https://edmonton-goji.github.io/Map/">Edmonton Goji Map</a>',
+            '<a href="https://www.fortedmontonpark.ca/learn/blog/post/goji-berries-tearoom">Fort Edmonton Park, “Goji Berry Teahouse”</a>',
+            '<a href="https://www.heritagefest.ca/2026festival">Edmonton Heritage Festival 2026</a>',
+            '<a href="https://www.cgaa.ab.ca/">Chinese Graduates Association of Alberta (CGAA)</a>',
+            '<a href="https://www.cgaa.ab.ca/projects/chinese-pavilion">CGAA — Chinese Pavilion</a>',
+            '<a href="https://www.w3.org/TR/WCAG22/">W3C, Web Content Accessibility Guidelines (WCAG) 2.2</a>',
         ]},
-        {"type": "heading", "level": 2, "text": "Primary project materials"},
+
+        {"type": "heading", "level": 2, "text": "Primary Project Materials"},
         {"type": "list", "items": [
             "Edmonton Heritage Festival Tea Exhibit Research 2026.",
-            "Go Have Tea: Tea, Landscape, and the Quiet Work of Anti-Racism, by Hui Yang, Ying Wen, and Junhong Ma.",
+            "Go Have Tea: Tea, Landscape, and the Quiet Work of Anti-Racism, by Yang Hui, Wen Ying, and Junhong Ma.",
             "Final bilingual poster and postcard texts developed for the exhibition.",
             "Approved poster designs, artwork photographs, exhibition labels, curator notes, and educational materials.",
         ]},
-        {"type": "heading", "level": 2, "text": "Image and quotation policy"},
+
+        {"type": "heading", "level": 2, "text": "Image and Quotation Policy"},
         {"type": "para", "text": "Every image carries a nearby credit. Long quotations, community stories, portraits, recordings, maps, and photographs are reproduced only within their permissions. External links do not imply permission to copy material."},
-        {"type": "heading", "level": 2, "text": "Educational and research notice"},
+        {"type": "heading", "level": 2, "text": "Educational and Research Notice"},
         {"type": "para", "text": "The wellness material shares cultural histories and community practices; it does not offer medical advice. Anonymous festival responses are not automatically research data. Any later academic use of identifiable visitor material requires a separate ethical and consent process."},
     ],
 }
@@ -733,5 +686,71 @@ PAGES["faq"] = {
             {"q": "May I photograph the exhibition?", "a": "You may photograph the display unless a label says otherwise. Ask permission before photographing visitors, volunteers, artists, or community contributors."},
             {"q": "Why might there be no tasting?", "a": "Festival food and beverage service requires approved procedures. The exhibition’s core experience is designed to work through looking, smelling sealed samples where permitted, making, reading, and conversation."},
         ]},
+    ],
+}
+
+# -------------------------------------------------------------------- tips
+PAGES["tea-tips"] = {
+    "title": "Tea Tips | Go Have Tea",
+    "meta": "Friendly beginner tea-brewing tips: a simple method, water temperature by tea type, and what to do without a thermometer.",
+    "blocks": [
+        {"type": "heading", "level": 1, "text": "Tea Tips"},
+        {"type": "para", "text": "Start simple. You need tea, water, a cup or pot, and a little attention. The suggestions below are starting points, not rules. Follow the package instructions when available, then adjust for your own taste."},
+        {"type": "heading", "level": 2, "text": "A Simple Method"},
+        {"type": "list", "ordered": True, "items": [
+            "Warm your cup or pot with hot water if you like.",
+            "Begin with about one teaspoon of loose tea for a 250 ml cup. Large, light leaves may need more space rather than more weight.",
+            "Add water at a temperature suited to the tea.",
+            "Taste after one to three minutes. If it is too strong, shorten the next infusion; if it is too light, add time or leaf.",
+            "Many loose-leaf teas can be infused more than once. Add a little time with each round and notice what changes.",
+        ]},
+        {"type": "heading", "level": 2, "text": "Water Temperature — Friendly Starting Points"},
+        {"type": "list", "items": [
+            "Green tea: 75–85°C",
+            "White tea: 80–90°C",
+            "Oolong tea: 85–95°C",
+            "Black tea: 90–100°C",
+            "Dark tea and many pu’er teas: 95–100°C",
+            "Herbal or floral infusions: follow the ingredient or package guidance",
+        ]},
+        {"type": "note", "style": "notice", "text": "No thermometer? Let fully boiled water rest briefly for delicate green or white tea. If a tea tastes harsh, try cooler water or less time before deciding that you dislike it."},
+        {"type": "para", "text": "These are general brewing suggestions, not medical or dietary advice."},
+        {"type": "buttons", "items": [{"label": "See the Tea Glossary", "href": "/en/glossary/"}]},
+    ],
+}
+
+# ---------------------------------------------------------- further-reading
+PAGES["further-reading"] = {
+    "title": "Further Reading | Go Have Tea",
+    "meta": "Six annotated books for readers who want to go further into tea history, science, and culture, chosen to match the exhibition’s central question.",
+    "blocks": [
+        {"type": "heading", "level": 1, "text": "Further Reading"},
+        {"type": "para", "text": "Six books for readers who want to go further, chosen to match this exhibition’s central question: what travels when tea travels?"},
+
+        {"type": "heading", "level": 2, "text": "Victor H. Mair and Erling Hoh, The True History of Tea"},
+        {"type": "para", "text": "A broad, readable history that follows tea across regions, languages, trade routes, and political change. It is a useful starting point for the exhibition’s central question—what travels when tea travels—while more specialized studies can add detail and debate."},
+        {"type": "buttons", "items": [{"label": "View at Thames & Hudson", "href": "https://www.thamesandhudsonusa.com/books/the-true-history-of-tea-softcover", "variant": "secondary", "external": True}]},
+
+        {"type": "heading", "level": 2, "text": "Kevin Gascoyne, François Marchand, Jasmin Desharnais, and Hugo Américi, Tea: History, Terroirs, Varieties"},
+        {"type": "para", "text": "Created by the Camellia Sinensis tea team, this illustrated introduction connects tea regions, processing, tasting, and brewing. It works especially well for visitors who want practical knowledge after seeing “One Plant, Many Teas.”"},
+        {"type": "buttons", "items": [{"label": "View bibliographic record", "href": "https://books.google.com/books/about/Tea.html?id=VBzwtgAACAAJ", "variant": "secondary", "external": True}]},
+
+        {"type": "heading", "level": 2, "text": "James A. Benn, Tea in China: A Religious and Cultural History"},
+        {"type": "para", "text": "Benn examines tea in relation to Buddhism, ritual, medicine, material practice, and cultural history in China. It offers helpful depth for reading the exhibition’s Chan references without turning a later slogan into a timeless, single tradition."},
+        {"type": "buttons", "items": [{"label": "View at University of Hawai‘i Press", "href": "https://uhpress.hawaii.edu/title/tea-in-china-a-religious-and-cultural-history/", "variant": "secondary", "external": True}]},
+
+        {"type": "heading", "level": 2, "text": "陆羽《茶经》 — Lu Yu, Classic of Tea"},
+        {"type": "para", "text": "Lu Yu’s Classic of Tea is a foundational Tang-dynasty text on tea materials, tools, preparation, and judgement. Read it as a work from a specific historical world, not as a timeless manual for every Chinese tea practice."},
+        {"type": "buttons", "items": [{"label": "Read at Chinese Text Project", "href": "https://ctext.org/wiki.pl?if=gb&res=584531", "variant": "secondary", "external": True}]},
+
+        {"type": "heading", "level": 2, "text": "陈宗懋、杨亚军主编《中国茶经》（修订版）"},
+        {"type": "para", "text": "This large reference work brings together tea history, science, production, categories, culture, and contemporary industry in China. It is best used selectively as a reference rather than read as a single narrative from beginning to end."},
+        {"type": "buttons", "items": [{"label": "View bibliographic record", "href": "https://book.douban.com/subject/7006696/", "variant": "secondary", "external": True}]},
+
+        {"type": "heading", "level": 2, "text": "吴觉农《茶经述评》"},
+        {"type": "para", "text": "Wu Juenong’s commentary places the Classic of Tea in dialogue with modern tea scholarship and production knowledge. It shows how a classic text can be re-read through later historical questions rather than simply repeated."},
+        {"type": "buttons", "items": [{"label": "View bibliographic record", "href": "https://book.douban.com/subject/1648347/", "variant": "secondary", "external": True}]},
+
+        {"type": "note", "style": "notice", "text": "Each title links to its publisher or an authoritative bibliographic record, not a retailer."},
     ],
 }
