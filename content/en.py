@@ -483,8 +483,6 @@ PAGES["artist-yang-hui"] = {
          "caption": "Yang Hui, painter."},
         {"type": "para", "text": "Yang Hui contributes painting to Go Have Tea. Her landscapes, teaware, and floral works bring movement, place, and material attention into the exhibition. Rather than serving as a decorative sign of “tradition,” each painting should be encountered as an individual artwork with its own title, date, medium, dimensions, and visual rhythm."},
         {"type": "para", "text": "In After Wang Meng’s Ge Zhichuan Moving His Dwelling, a classical composition is re-situated through a work made in Edmonton. The image of a family moving through mountains can be read not simply as retreat, but as reorientation: a search for rhythm, shelter, dignity, and renewed relation in a changing environment."},
-        {"type": "heading", "level": 2, "text": "Featured Work"},
-        {"type": "quote", "text": "Yang Hui, After Wang Meng’s Ge Zhichuan Moving His Dwelling / 仿王蒙《葛稚川移居图》, 2022, acrylic on canvas, 24 × 60 in., Edmonton."},
     ],
 }
 
@@ -498,11 +496,6 @@ PAGES["artist-wen-ying"] = {
          "caption": "Wen Ying, calligrapher."},
         {"type": "para", "text": "Wen Ying contributes calligraphy to Go Have Tea. Her works Go Have Tea and Harmony, Not Sameness give the exhibition’s central phrases weight, spacing, gesture, and pace. The website should show the complete calligraphy before using any detail or crop."},
         {"type": "para", "text": "Calligraphy is not decorative proof of cultural authenticity here. The shape, pressure, spacing, and rhythm of the brush make short phrases feel bodily and present—吃茶去 turns the exhibition’s central idea into an action, and 和而不同 makes coexistence without assimilation visible as a vertical sequence of inked characters."},
-        {"type": "heading", "level": 2, "text": "Featured Works"},
-        {"type": "list", "items": [
-            "Wen Ying, 吃茶去 / Go Have Tea, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton.",
-            "Wen Ying, 和而不同 / Harmony Without Sameness, calligraphy, 13 3/4 × 27 1/2 in., 2026, Edmonton.",
-        ]},
     ],
 }
 
