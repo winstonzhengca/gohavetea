@@ -466,11 +466,9 @@ PAGES["artists"] = {
         {"type": "heading", "level": 1, "text": "Artists"},
         {"type": "para", "text": "The exhibition was developed through a conversation among research, painting, calligraphy, graphic composition, and public interpretation. The artworks are not generic signs of “Chinese tradition.” Each one changes how the exhibition can be read."},
         {"type": "para", "text": "Yang Hui’s paintings bring mountains, vessels, flowers, animals, and material attention into the project. Wen Ying’s calligraphy gives visual weight to short phrases that organize the exhibition’s ethics and rhythm."},
-        {"type": "gallery_grid", "items": [
-            {"title": "Yang Hui", "href": "/en/artists/yang-hui/", "sub": "Painter",
-             "src": "artist-yang-hui.jpg", "alt": "Painter Yang Hui smiling outdoors, holding a large moose antler, with snow-capped mountains behind her."},
-            {"title": "Wen Ying", "href": "/en/artists/wen-ying/", "sub": "Calligrapher",
-             "src": "artist-wen-ying.jpg", "alt": "Calligrapher Wen Ying outdoors on a sunny street, wearing sunglasses and a patterned sun hat."},
+        {"type": "buttons", "items": [
+            {"label": "Yang Hui", "href": "/en/artists/yang-hui/"},
+            {"label": "Wen Ying", "href": "/en/artists/wen-ying/"},
         ]},
     ],
 }
