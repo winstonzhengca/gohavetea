@@ -214,10 +214,17 @@ def render_block(block, lang, page_key=""):
     if t == "gallery_grid":
         cards = []
         for i, item in enumerate(block["items"]):
-            tone = TONE_CYCLE[i % len(TONE_CYCLE)]
+            if item.get("src"):
+                thumb = (
+                    f'<img class="gallery-card-thumb" src="{url("/assets/img/" + item["src"])}" '
+                    f'alt="{esc(item.get("alt", ""))}" loading="lazy">'
+                )
+            else:
+                tone = TONE_CYCLE[i % len(TONE_CYCLE)]
+                thumb = f'<span class="gallery-card-thumb tone-{tone}" aria-hidden="true"></span>'
             cards.append(
                 f'<a class="gallery-card" href="{esc(url(item["href"]))}">'
-                f'<span class="gallery-card-thumb tone-{tone}" aria-hidden="true"></span>'
+                f'{thumb}'
                 f'<span class="gallery-card-title">{item["title"]}</span>'
                 f'{"<span class=\"gallery-card-sub\">" + item["sub"] + "</span>" if item.get("sub") else ""}'
                 f"</a>"

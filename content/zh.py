@@ -455,8 +455,10 @@ PAGES["artists"] = {
         {"type": "para", "text": "本展览是在研究、绘画、书法、平面构成与公共阐释的持续对话中形成的。艺术作品不是用来证明“传统感”的泛化符号，而是改变观众理解展览的方式。"},
         {"type": "para", "text": "杨慧的山水、茶器与花卉作品把物质形态、迁移与安顿带进展览；温颖的书法则让组织本次展览的短语具有可见的重量、间距与节奏。"},
         {"type": "gallery_grid", "items": [
-            {"title": "杨慧", "href": "/zh/artists/yang-hui/", "sub": "画家"},
-            {"title": "温颖", "href": "/zh/artists/wen-ying/", "sub": "书法家"},
+            {"title": "杨慧", "href": "/zh/artists/yang-hui/", "sub": "画家",
+             "src": "artist-yang-hui.jpg", "alt": "画家杨慧在户外微笑留影，手持一只大鹿角，背景为雪山。"},
+            {"title": "温颖", "href": "/zh/artists/wen-ying/", "sub": "书法家",
+             "src": "artist-wen-ying.jpg", "alt": "书法家温颖在户外阳光下留影，戴着墨镜与花纹遮阳帽。"},
         ]},
     ],
 }
