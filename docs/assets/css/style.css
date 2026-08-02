@@ -319,6 +319,24 @@ main {
 
 /* ------------------------------------------------------- placeholder art */
 
+.photo-panel {
+  margin: 1.75rem 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--white);
+}
+.photo-panel img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.photo-panel figcaption {
+  padding: 0.85rem 1.1rem;
+  font-size: 0.9rem;
+  color: #574f49;
+}
+
 .placeholder-panel {
   margin: 1.75rem 0;
   border: 1px solid var(--line);

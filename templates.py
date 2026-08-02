@@ -130,6 +130,14 @@ def render_block(block, lang, page_key=""):
         return f'<div class="note note-{style}">{label_html}{block["text"]}</div>'
 
     if t == "image":
+        if block.get("src"):
+            caption = ""
+            if block.get("caption"):
+                caption = f'<figcaption><span class="caption-text">{block["caption"]}</span></figcaption>'
+            return f"""<figure class="photo-panel">
+  <img src="{url('/assets/img/' + block['src'])}" alt="{esc(block.get('alt', ''))}" loading="lazy">
+  {caption}
+</figure>"""
         tone = block.get("tone") or _tone_for(block.get("caption", page_key))
         pending = (
             f'<span class="placeholder-pending">{PENDING_TAG[lang]}</span>'

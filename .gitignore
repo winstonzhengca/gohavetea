@@ -1,2 +1,8 @@
 __pycache__/
 *.pyc
+
+# Raw source images/PDFs (large, unprocessed, may carry EXIF/GPS on
+# personal photos). Processed, compressed, EXIF-stripped versions live in
+# docs/assets/img/, which is what actually gets published.
+/img/
+Go_Have_Tea_Website_Master_Revision_Brief_v2.0.pdf
